@@ -3,9 +3,7 @@ layout: default
 title: About
 ---
 
-This is where you would but a short bio, and/or a description of your site. It also serves as an example of how to set up a standalone page. For example:
+Born somewhere at some time, I now try my best to learn the most I can.
 
 <img src="https://github.com/Mushi-mushi/mushi-mushi.github.io/blob/master/images/pic.png?raw=true" class="right" width="200" height="200"/>
-**William Shakespeare** (26 April 1564 – 23 April 1616) was an English poet and playwright, widely regarded as the greatest writer in the English language and the world's pre-eminent dramatist. He is often called England's national poet and the "Bard of Avon". His extant works, including some collaborations, consist of about 38 plays, 154 sonnets, two long narrative poems, and a few other verses, the authorship of some of which is uncertain. His plays have been translated into every major living language and are performed more often than those of any other playwright.
-
-Shakespeare was born and brought up in Stratford-upon-Avon. At the age of 18, he married Anne Hathaway—no, not *that* Anne Hathaway—with whom he had three children.
+**Mushi-Mushi** (Some time ago – Not yet) Apprentice researcher in Cyber Security. Spent too much time copy-pasting as an analyst, barely enough developing use cases on different SIEM and definitely not enough practicing CTF, Reverse Engineering and Threat Actor profiling. One day will be able to code without looking at every function on StackOverflow. Occasionally read documentation after wasting several hours brute-forcing a solution ...
