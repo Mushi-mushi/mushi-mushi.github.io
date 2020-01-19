@@ -1,6 +1,6 @@
-name: Solar Theme
-url: http://example.org
-description: A stylish blog using the Solarized color palette
+name: Mushi's Lair
+url: https://mushi-mushi.github.io/
+description: The tribulations of an apprentice researcher
 
 permalink: /:year/:month/:day/:title/
 paginate: 10
