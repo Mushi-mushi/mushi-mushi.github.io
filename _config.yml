@@ -1,3 +1,5 @@
+github:
+  is_project_page: false
 theme: jekyll-theme-midnight
 title: Testing this new page
 description: Testing description
