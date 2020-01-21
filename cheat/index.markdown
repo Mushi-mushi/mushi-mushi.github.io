@@ -30,11 +30,11 @@ stty rows number_of_row columns number_of_columns
 Interesting Links:
 --------------
 - [jwt.io][link1]: Decode and edit jwt token
-- [cyberchef][link3]:Decode and encode in multiple format
-- [stackedit.io][link4]:Markdown editor
-- [devhints.io][link5]:Jekyll dev ops tricks
-- [jekyllrb.com][link6]Jekyll tuto
-- [PayloadsAllTheThings][link7]Payload for everything
+- [cyberchef][link3]: Decode and encode in multiple format
+- [stackedit.io][link4]: Markdown editor
+- [devhints.io][link5]: Jekyll dev ops tricks
+- [jekyllrb.com][link6]: Jekyll tuto
+- [PayloadsAllTheThings][link7]: Payload for everything
 
 [link1]:https://jwt.io/  
 [link2]:http://jekyllrb.com
