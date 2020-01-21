@@ -13,20 +13,18 @@ Then press CTRL+Z to return to your local shell
 
 {% highlight bash%}
 stty raw -echo
-
 stty -a
 {% endhighlight %}
 
-Press fg to return to the box
+Note the number of rows and colouns before pressing fg to return to the box
 
 {% highlight bash%}
 export SHELL=bash
-
 export TERM=xterm256-color
-
 stty rows number_of_row columns number_of_columns
 {% endhighlight %}
 
+Enjoy!
 
 Interesting Links:
 --------------
