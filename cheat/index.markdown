@@ -24,6 +24,10 @@ stty -a
 This will give you the number of columns and rows of the terminal
 
 {% highlight bash%}
+export SHELL=bash
+
+export TERM=xterm256-color
+
 stty rows number_of_row columns number_of_columns
 {% endhighlight %}
 
