@@ -5,7 +5,7 @@ title: Cheatsheet
 
 Upgrading Simple Shells to Fully Interactive TTYs
 --------------
-{% highlight bash%}
+{% highlight python%}
 python -c 'import pty; pty.spawn("/bin/bash")'
 {% endhighlight %}
 
