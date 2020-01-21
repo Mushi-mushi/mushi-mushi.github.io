@@ -9,19 +9,15 @@ Upgrading Simple Shells to Fully Interactive TTYs
 python -c 'import pty; pty.spawn("/bin/bash")'
 {% endhighlight %}
 
-Then press CTRL+Z to background
+Then press CTRL+Z to return to your local shell
 
 {% highlight bash%}
 stty raw -echo
-{% endhighlight %}
 
-Press Enter, fg, then Enter twice to return to your original shell
-
-{% highlight bash%}
 stty -a
 {% endhighlight %}
 
-This will give you the number of columns and rows of the terminal
+Press fg to return to the box
 
 {% highlight bash%}
 export SHELL=bash
@@ -30,6 +26,7 @@ export TERM=xterm256-color
 
 stty rows number_of_row columns number_of_columns
 {% endhighlight %}
+
 
 Interesting Links:
 --------------
