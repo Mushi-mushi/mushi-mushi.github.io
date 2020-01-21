@@ -35,7 +35,7 @@ Interesting Links:
 - [jekyllrb.com][link6]: Jekyll tuto
 - [PayloadsAllTheThings][link7]: Payload for everything
 - [Netsec][link8]: Idea for future tutorials
-
+- [Pentestmonkey][link9]: Reverse Shell Cheat Sheet
 [link1]:https://jwt.io/  
 [link2]:http://jekyllrb.com
 [link3]:https://gchq.github.io/CyberChef/
@@ -44,3 +44,4 @@ Interesting Links:
 [link6]:https://jekyllrb.com/
 [link7]:https://github.com/swisskyrepo/PayloadsAllTheThings
 [link8]:https://netsec.ws/?p=376
+[link9]:http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
