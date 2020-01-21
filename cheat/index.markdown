@@ -3,6 +3,19 @@ layout: default
 title: Cheatsheet
 ---
 
+Upgrading Simple Shells to Fully Interactive TTYs
+--------------
+{% highlight python%}
+python -c 'import pty; pty.spawn("/bin/bash")'
+{% endhighlight %}
+
+{% highlight bash%}
+python -c 'import pty; pty.spawn("/bin/bash")'
+{% endhighlight %}
+
+```console
+python -c 'import pty; pty.spawn("/bin/bash")'
+```
 Interesting Links:
 --------------
 - https://jwt.io/                     Decode and edit jwt token
