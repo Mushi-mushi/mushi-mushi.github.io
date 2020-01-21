@@ -16,7 +16,7 @@ stty raw -echo
 stty -a
 {% endhighlight %}
 
-Note the number of rows and colouns before pressing fg to return to the box
+Note the number of rows and columns before pressing fg to return to the box
 
 {% highlight bash%}
 export SHELL=bash
