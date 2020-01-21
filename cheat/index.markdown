@@ -10,3 +10,4 @@ Interesting Links:
 - https://stackedit.io/app#           Markdown editor
 - https://devhints.io/jekyll          Jekyll dev ops tricks
 - https://jekyllrb.com/               Jekyll tuto
+- https://github.com/swisskyrepo/PayloadsAllTheThings   Payload for everything
