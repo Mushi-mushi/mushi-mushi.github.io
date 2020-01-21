@@ -8,3 +8,12 @@ paginate: 10
 gems: [jekyll-paginate]
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 
+jekyll-archives:
+  enabled: []
+  layout: archive
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'
