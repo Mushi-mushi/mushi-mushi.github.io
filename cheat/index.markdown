@@ -7,6 +7,8 @@ Upgrading Simple Shells to Fully Interactive TTYs
 --------------
 {% highlight python%}
 python -c 'import pty; pty.spawn("/bin/bash")'
+or
+python3 -c 'import pty; pty.spawn("/bin/bash")'
 {% endhighlight %}
 
 Then press CTRL+Z to return to your local shell
