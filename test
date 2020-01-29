@@ -1,3 +1,4 @@
 {% highlight C %} if((this->bytes_written + packet->fragment_len) > this->buffer_size)
 	return error; {% endhighlight %}
 https://medium.com/@maverickNerd/recon-everything-48aafbb8987
+https://blog.layle.io/uncovering-cve-2020-0601/
