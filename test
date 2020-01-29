@@ -1,0 +1,2 @@
+{% highlight C %} if((this->bytes_written + packet->fragment_len) > this->buffer_size)
+	return error; {% endhighlight %}
