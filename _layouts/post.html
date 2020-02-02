@@ -6,10 +6,11 @@ layout: default
 
 	{% if page.external-url %}
 		<h1>
-			<a href="{{ page.external-url }}">{% include read_time.html %}{{% include read_time.html %}}{{ page.title }} + {{% include read_time.html %}}</a> 
+			<a href="{{ page.external-url }}">{{ page.title }}</a> 
 			<a class="anchor" href="{{ page.url }}"><i class="icon-anchor"></i></a>
 			{% include read_time.html %}
 		</h1>
+		<p>{% include read_time.html %}</p>
 	{% else %}
 		<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
 	{% endif %}
