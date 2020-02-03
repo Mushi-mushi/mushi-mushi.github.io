@@ -6,17 +6,15 @@ layout: default
 
 	{% if page.external-url %}
 		<h1>
-			<a href="{{ page.external-url }}">{{ page.title }}</a> <p class="meta">{% include read_time.html %}</span></p>
-			<a class="anchor" href="{{ page.url }}"><i class="icon-anchor"></i></a>			
+			<a href="{{ page.external-url }}">{{ page.title }}</a> 
+			<a class="anchor" href="{{ page.url }}"><i class="icon-anchor"></i></a>	
+			
 		</h1>
-		<p class="meta">{% include read_time.html %}</span></p>
 	{% else %}
 		<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
 	{% endif %}
 	<p class="meta">{% include read_time.html %}</span></p>
-changed
 	<div class="post-content">{{ content }}</div>
-
 	<p class="meta">Posted on <span class="postdate">{{ page.date | date: "%b %d, %Y" }}</span></p>
 
 </article>
