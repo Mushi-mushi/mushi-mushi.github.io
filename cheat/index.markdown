@@ -25,8 +25,7 @@ Enter      :Copy selection
 Ctrl + b ] : Paste contents of buffer_0
 {% endhighlight %}
 
-[Top](#tmux-shortcut)
-
+[Back to the top](#tmux-shortcut)
 
 Upgrading Simple Shells to Fully Interactive TTYs
 =================================================
@@ -53,6 +52,8 @@ stty rows number_of_row columns number_of_columns
 
 Enjoy!
 
+[Back to the top](#tmux-shortcut)
+
 Finding binaries that the systems package manager does not recognize
 ====================================================================
 {% highlight bash%}
@@ -62,6 +63,8 @@ for i in $(ls /sbin/*); do dpkg --search $i 1>/dev/null; done
 {% endhighlight %}
 
 To investigate on different location in the $PATH
+
+[Back to the top](#tmux-shortcut)
 
 Interesting Links:
 ==================
@@ -74,6 +77,8 @@ Interesting Links:
 - [Netsec][link8]: Idea for future tutorials
 - [Pentestmonkey][link9]: Reverse Shell Cheat Sheet
 - [W3schools][link10]: Testing new layout
+
+[Back to the top](#tmux-shortcut)
 
 [link1]:https://jwt.io/  
 [link2]:http://jekyllrb.com
