@@ -37,6 +37,7 @@ Ctrl + b ] : Paste contents of buffer_0
 <code>
   <kbd>Ctrl</kbd>+ b c :Create window
 </code>
+
 [Back to the top](#tmux-shortcut)
 
 Upgrading Simple Shells to Fully Interactive TTYs
