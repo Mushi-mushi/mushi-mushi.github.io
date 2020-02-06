@@ -51,6 +51,16 @@ stty rows number_of_row columns number_of_columns
 
 Enjoy!
 
+Finding binaries that the systems package manager recognize
+===========================================================
+{% highlight bash%}
+for i in $(ls /sbin/*); do echo $i; done
+for i in $(ls /sbin/*); do dpkg --search $i; done
+for i in $(ls /sbin/*); do dpkg --search $i 1>/dev/null; done
+{% endhighlight %}
+
+To investigate on different location in the $PATH
+
 Interesting Links:
 ==================
 - [jwt.io][link1]: Decode and edit jwt token
