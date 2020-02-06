@@ -11,7 +11,7 @@ title: Cheatsheet
 
 Tmux shortcut
 =============
-{% highlight bash%}
+{% highlight%}
 <kbd>Ctrl</kbd>+ b c :Create window
 Ctrl + b , :Rename current window
 Ctrl + b % :Split pane vertically
