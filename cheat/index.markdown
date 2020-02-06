@@ -1,5 +1,5 @@
 ---
-layout: cheat
+layout: default
 title: Cheatsheet
 ---
 
