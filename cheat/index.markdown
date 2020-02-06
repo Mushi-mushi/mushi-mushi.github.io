@@ -2,11 +2,11 @@
 layout: cheat
 title: Cheatsheet
 ---
-
+<kbd>Ctrl</kbd>
 Tmux shortcut
 =============
 {% highlight bash%}
-Ctrl + b c :Create window
+<kbd>Ctrl</kbd>+ b c :Create window
 Ctrl + b , :Rename current window
 Ctrl + b % :Split pane vertically
 Ctrl + b " :Split pane horizontally
