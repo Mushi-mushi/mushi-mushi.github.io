@@ -60,7 +60,7 @@ stty rows number_of_row columns number_of_columns
 
 Enjoy!
 
-[Back to the top](#tmux-shortcut)
+[Back to the top](#content)
 
 Finding binaries that the systems package manager does not recognize
 ====================================================================
