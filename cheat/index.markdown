@@ -7,7 +7,7 @@ title: Cheatsheet
 Table of contents
 =================
 
-<!--ts-->
+
    * [Table of contents](#table-of-contents)
    * [Tmux shortcut](#tmux-shortcut)
    * [Upgrading Simple Shells to Fully Interactive TTYs](#upgrading-simple-shells-to-fully-interactive-ttys)
@@ -15,7 +15,7 @@ Table of contents
    * [Test](#usage)
       * [Test1](#stdin)
 
-<!--te-->
+
 
 Tmux shortcut
 =============
