@@ -10,6 +10,18 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+kbd {
+  border-style: outset;
+  border-width: 2px;
+  border-color: #999999;
+  border-radius: 6px;
+  padding: 3px;
+  font-size: 75%;
+  font-weight: 475;
+  background-color: #f8f8f8;
+  margin: 2px;
+  white-space: nowrap;
+}
 body {
 	line-height: 1;
 }
