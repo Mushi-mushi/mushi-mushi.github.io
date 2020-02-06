@@ -11,6 +11,7 @@ Table of contents
    * [Table of contents](#table-of-contents)
    * [Tmux shortcut](#tmux-shortcut)
    * [Upgrading Simple Shells to Fully Interactive TTYs](#upgrading-simple-shells-to-fully-interactive-ttys)
+   * [Interesting Links](#interesting-links:)
    * [Test](#usage)
       * [Test1](#stdin)
 
@@ -57,7 +58,7 @@ Ctrl + b ] : Paste contents of buffer_0
 
 
 Upgrading Simple Shells to Fully Interactive TTYs
---------------
+============
 {% highlight python%}
 python -c 'import pty; pty.spawn("/bin/bash")'
 or
@@ -82,7 +83,7 @@ stty rows number_of_row columns number_of_columns
 Enjoy!
 
 Interesting Links:
---------------
+============
 - [jwt.io][link1]: Decode and edit jwt token
 - [cyberchef][link3]: Decode and encode in multiple format
 - [stackedit.io][link4]: Markdown editor
