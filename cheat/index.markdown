@@ -51,8 +51,8 @@ stty rows number_of_row columns number_of_columns
 
 Enjoy!
 
-Finding binaries that the systems package manager recognize
-===========================================================
+Finding binaries that the systems package manager does not recognize
+====================================================================
 {% highlight bash%}
 for i in $(ls /sbin/*); do echo $i; done
 for i in $(ls /sbin/*); do dpkg --search $i; done
