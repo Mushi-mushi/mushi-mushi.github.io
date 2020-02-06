@@ -7,7 +7,7 @@ title: Cheatsheet
 Tmux shortcut
 =============
 {% highlight bash%}
-<kbd>Ctrl</kbd>+<kbd>b</kbd> <kbd>c</kbd> :Create window
+<bloc><kbd>Ctrl</kbd>+<kbd>b</kbd> <kbd>c</kbd> :Create window</bloc>
 TESTINGGGGG
 Ctrl + b , :Rename current window
 Ctrl + b % :Split pane vertically
