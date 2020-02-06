@@ -13,6 +13,7 @@ Tmux shortcut
 =============
 {% highlight%}
 <kbd>Ctrl</kbd>+ b c :Create window
+TESTINGGGGG
 Ctrl + b , :Rename current window
 Ctrl + b % :Split pane vertically
 Ctrl + b " :Split pane horizontally
