@@ -31,6 +31,10 @@ Enter      :Copy selection
 Ctrl + b ] : Paste contents of buffer_0
 {% endhighlight %}
 
+---
+<kbd>Ctrl</kbd>+ b c :Create window
+---
+
 [Back to the top](#tmux-shortcut)
 
 Upgrading Simple Shells to Fully Interactive TTYs
