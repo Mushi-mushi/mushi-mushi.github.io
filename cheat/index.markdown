@@ -32,9 +32,6 @@ Enter      :Copy selection
 Ctrl + b ] : Paste contents of buffer_0
 {% endhighlight %}
 
----
-<kbd>Ctrl</kbd>+ b c :Create window
----
 <code>
   <kbd>Ctrl</kbd>+ b c :Create window
 </code>
