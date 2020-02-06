@@ -8,7 +8,7 @@ Table of contents
 =================
 
 <!--ts-->
-   * [gh-md-toc](#gh-md-toc)
+   * [Tmux shortcut](#Tmux shortcut)
    * [Table of contents](#table-of-contents)
    * [Installation](#installation)
    * [Usage](#usage)
