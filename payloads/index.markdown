@@ -1,5 +1,5 @@
 ---
-layout: tips
+layout: default
 title: Generating the best payloads
 ---
 
