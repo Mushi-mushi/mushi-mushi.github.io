@@ -7,8 +7,7 @@ title: Tips and Tricks
 Tmux shortcut
 =============
 {% highlight bash%}
-<bloc><kbd>Ctrl</kbd>+<kbd>b</kbd> <kbd>c</kbd> :Create window</bloc>
-TESTINGGGGG
+Ctrl + b c :Create window</bloc>
 Ctrl + b , :Rename current window
 Ctrl + b % :Split pane vertically
 Ctrl + b " :Split pane horizontally
@@ -26,12 +25,6 @@ Esc        :Clear selection
 Enter      :Copy selection
 Ctrl + b ] : Paste contents of buffer_0
 {% endhighlight %}
-
-<pre><code>
-  <kbd>Ctrl</kbd>+ b c :Create window
-</code></pre>
-
-TESTING
 
 [Back to the top](##header)
 
