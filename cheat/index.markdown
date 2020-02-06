@@ -3,20 +3,6 @@ layout: cheat
 title: Cheatsheet
 ---
 
-
-Table of contents
-=================
-
-
-   * [Table of contents](#table-of-contents)
-   * [Tmux shortcut](#tmux-shortcut)
-   * [Upgrading Simple Shells to Fully Interactive TTYs](#upgrading-simple-shells-to-fully-interactive-ttys)
-   * [Interesting Links](#interesting-links)
-   * [Test](#usage)
-      * [Test1](#stdin)
-
-
-
 Tmux shortcut
 =============
 {% highlight bash%}
