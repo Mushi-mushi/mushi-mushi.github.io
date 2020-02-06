@@ -72,7 +72,7 @@ for i in $(ls /sbin/*); do dpkg --search $i 1>/dev/null; done
 
 To investigate on different location in the $PATH
 
-[Back to the top](#tmux-shortcut)
+[Back to the top](#header)
 
 Interesting Links:
 ==================
