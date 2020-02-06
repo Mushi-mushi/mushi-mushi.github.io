@@ -25,6 +25,8 @@ Enter      :Copy selection
 Ctrl + b ] : Paste contents of buffer_0
 {% endhighlight %}
 
+[Top](#tmux-shortcut)
+
 
 Upgrading Simple Shells to Fully Interactive TTYs
 =================================================
