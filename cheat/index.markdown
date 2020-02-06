@@ -7,21 +7,37 @@ Tmux shortcut
 --------------
 {% highlight bash%}
 Ctrl + b c :Create window
+
 Ctrl + b , :Rename current window
+
 Ctrl + b % :Split pane vertically
+
 Ctrl + b " :Split pane horizontally
+
 Ctrl + b z :Toggle pane zoom
+
 Ctrl + b ! :Convert pane into a window
+
 Ctrl + b [ :Enter copy mode
+
 q : Quit mode
+
 / :Search forward
+
 ? :Search backward
+
 n :Next keyword occurance
+
 N :Previous keyword occurance
+
 Spacebar   :Start selection
+
 Esc        :Clear selection
+
 Enter      :Copy selection
+
 Ctrl + b ] : Paste contents of buffer_0
+
 {% endhighlight %}
 
 
