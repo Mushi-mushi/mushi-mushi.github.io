@@ -4,7 +4,7 @@ title: Cheatsheet
 ---
 
 <block>
-<kbd>Ctrl</kbd>
+<kbd>Ctrl</kbd>+<kbd>b</kbd> kbd>c</kbd> : create window
 </block>
 
 
