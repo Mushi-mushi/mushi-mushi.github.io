@@ -18,6 +18,8 @@ Ctrl + b z :Toggle pane zoom
 
 Ctrl + b ! :Convert pane into a window
 
+Ctrl + b x :Close current pane
+
 Ctrl + b [ :Enter copy mode
 
 q : Quit mode
