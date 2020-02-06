@@ -9,8 +9,8 @@ Table of contents
 
 <!--ts-->
    * [Table of contents](#table-of-contents)
-   * [Tmux shortcut](#Tmux-shortcut)
-   * [Upgrading Simple Shells to Fully Interactive TTYs](#Upgrading-Simple-Shells-to-Fully-Interactive-TTYs)
+   * [Tmux shortcut](#tmux-shortcut)
+   * [Upgrading Simple Shells to Fully Interactive TTYs](#upgrading-simple-shells-to-fully-interactive-ttys)
    * [Test](#usage)
       * [Test1](#stdin)
 
