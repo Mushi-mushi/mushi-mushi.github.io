@@ -8,9 +8,8 @@ Table of contents
 =================
 
 <!--ts-->
-   * [Tmux shortcut](#Tmux shortcut)
    * [Table of contents](#table-of-contents)
-   * [Installation](#installation)
+   * [Tmux shortcut](#Tmux-shortcut)
    * [Usage](#usage)
       * [STDIN](#stdin)
       * [Local files](#local-files)
