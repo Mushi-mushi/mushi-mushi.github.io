@@ -1,5 +1,5 @@
 ---
-layout: Tips
+layout: tips
 title: Tips and Tricks
 ---
 
