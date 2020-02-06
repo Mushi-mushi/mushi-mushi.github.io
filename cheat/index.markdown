@@ -2,7 +2,11 @@
 layout: cheat
 title: Cheatsheet
 ---
+
+<block>
 <kbd>Ctrl</kbd>
+</block>
+
 
 
 Tmux shortcut
