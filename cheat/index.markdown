@@ -18,7 +18,7 @@ Table of contents
 <!--te-->
 
 Tmux shortcut
-============
+=============
 {% highlight bash%}
 Ctrl + b c :Create window
 
@@ -58,7 +58,7 @@ Ctrl + b ] : Paste contents of buffer_0
 
 
 Upgrading Simple Shells to Fully Interactive TTYs
-============
+=================================================
 {% highlight python%}
 python -c 'import pty; pty.spawn("/bin/bash")'
 or
@@ -83,7 +83,7 @@ stty rows number_of_row columns number_of_columns
 Enjoy!
 
 Interesting Links:
-============
+==================
 - [jwt.io][link1]: Decode and edit jwt token
 - [cyberchef][link3]: Decode and encode in multiple format
 - [stackedit.io][link4]: Markdown editor
