@@ -20,7 +20,7 @@ cd Veil/
 {% endhighlight %}
 
 Veil is pretty easy to use:
-![test](https://mushi-mushi.github.io/ressources/veil/Screenshot from 2020-02-07 09-40-32.png "Logo Title Text 1")
+![test](https://mushi-mushi.github.io/ressources/veil/veil-menu.png "Logo Title Text 1")
 
 Movfuscator
 =============
