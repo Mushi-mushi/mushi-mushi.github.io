@@ -20,7 +20,7 @@ cd Veil/
 {% endhighlight %}
 
 Veil is pretty easy to use:
-![test](https://mushi-mushi.github.io/ressources/veil/veil-menu.png =50x)
+![](https://mushi-mushi.github.io/ressources/veil/veil-menu.png){: height="36px" width="36px"}
 
 Movfuscator
 =============
