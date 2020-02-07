@@ -20,7 +20,6 @@ cd Veil/
 {% endhighlight %}
 
 Veil is pretty easy to use:
-![](https://mushi-mushi.github.io/ressources/veil/veil-menu.png){: height="36px" width="36px"}
 {% highlight bash%}
 
 ===============================================================================
@@ -55,6 +54,8 @@ Movfuscator
 =============
 Installing Movfuscator
 {% highlight bash%}
-apt -y install veil
-/usr/share/veil/config/setup.sh --force --silent
+git clone https://github.com/xoreaxeaxeax/movfuscator
+cd movfuscator
+./build.sh
+sudo ./install.sh
 {% endhighlight %}
