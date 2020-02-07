@@ -22,6 +22,7 @@ cd Veil/
 Veil is pretty easy to use:
 ![](https://mushi-mushi.github.io/ressources/veil/veil-menu.png){: height="36px" width="36px"}
 {% highlight bash%}
+
 ===============================================================================
                              Veil | [Version]: 3.1.12
 ===============================================================================
@@ -47,6 +48,7 @@ Available Commands:
         use                     Use a specific tool
 
 Veil>: 
+
 {% endhighlight %}
 
 Movfuscator
