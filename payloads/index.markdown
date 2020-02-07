@@ -21,6 +21,33 @@ cd Veil/
 
 Veil is pretty easy to use:
 ![](https://mushi-mushi.github.io/ressources/veil/veil-menu.png){: height="36px" width="36px"}
+{% highlight bash%}
+===============================================================================
+                             Veil | [Version]: 3.1.12
+===============================================================================
+      [Web]: https://www.veil-framework.com/ | [Twitter]: @VeilFramework
+===============================================================================
+
+Main Menu
+
+        2 tools loaded
+
+Available Tools:
+
+        1)      Evasion
+        2)      Ordnance
+
+Available Commands:
+
+        exit                    Completely exit Veil
+        info                    Information on a specific tool
+        list                    List available tools
+        options                 Show Veil configuration
+        update                  Update Veil
+        use                     Use a specific tool
+
+Veil>: 
+{% endhighlight %}
 
 Movfuscator
 =============
