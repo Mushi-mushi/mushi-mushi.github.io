@@ -16,7 +16,7 @@ python handler.py -b YourIP:Youropenedport
 {% endhighlight %}
 <sup>Shell scripts from [infodox][link11]</sup>
 
-Unfortunately, and as very many Metasploit payloads generated through MSFvenom, those are easily picked up by anti-virus nowadays.
+Unfortunately, and as with very many Metasploit payloads generated through MSFvenom, those are easily picked up by anti-virus nowadays.
 
 Veil
 =============
