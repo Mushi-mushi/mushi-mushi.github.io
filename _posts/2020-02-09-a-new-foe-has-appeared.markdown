@@ -80,7 +80,7 @@ to mimic the structure of the existing pyc files, I needed to actually add:
 
 And that the file was only getting decompiled on my windows environment...
 
-Finaly we can uncompyle the file:
+Finaly we can uncompile the file:
 {% highlight python%}
 C:\Users\user\Desktop>uncompyle6 final2.pyc
 # uncompyle6 version 3.6.2
