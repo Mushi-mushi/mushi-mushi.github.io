@@ -134,18 +134,17 @@ Jerry
 ![](/images/new-foe/Jerry.jpg)|
 
 | Source | Link |
+|-------------|--------------------|
 | Google drive | https://drive.google.com/uc?export=qtypasadfzxcload&id=1JRWUcux5uocl9gNZ3f8Ue--P1kLjZkQC |
 | Any.Run | https://app.any.run/tasks/da50d156-3183-46f0-ab13-722ee395d932 |
 | VirusTotal | https://www.virustotal.com/gui/file/b994ae5cbfb5ad308656e9a8bf7a4a866fdeb9e23699f89f048d7f92e6bb8577/details |
 
 | Type | Value |
+|-------------|--------------------|
 | MD5 | a1cd6a64e8f8ad5d4b6c07dc4113c7ec |
 | SHA-1 | 60e2f48a51c061bba72a08f34be781354f87aa49 |
 | SHA-256 | b994ae5cbfb5ad308656e9a8bf7a4a866fdeb9e23699f89f048d7f92e6bb8577 |
 
-|Name   |Columns                               |
-|-------|--------------------------------------|
-|PRIMARY|{::nomarkdown}<ul><li>id</li></ul>{:/}|
 
 Appears to be NirCmd. NirCmd is a small command-line utility that allows you to do some useful tasks without displaying any user interface. By running NirCmd with simple command-line option, you can write and delete values and keys in the Registry, write values into INI file, dial to your internet account or connect to a VPN network, restart windows or shut down the computer, create shortcut to a file, change the created/modified date of a file, change your display settings, turn off your monitor, open the door of your CD-ROM drive, and more...
 
@@ -154,38 +153,18 @@ Sunset
 ![](/images/new-foe/Sunset.jpg){: width="600" height="600")}
 
 | Source | Link |
-| Google drive | https://drive.google.com/uc?export=qtypasadfzxcload&id=1Z2Y_QZXvza28ZqLUuzmWiSElvcySBf2o |
-| Any.Run | https://app.any.run/tasks/0f400de0-00b1-4d7e-ae03-83130592a443 |
-| VirusTotal | https://www.virustotal.com/gui/file/9373556b150ca9f92f3a9100122eed9fc3024698be63c6ed4538b9d2027c43f1/detection |
+|-------------|--------------------|
+| Google drive   | https://drive.google.com/uc?export=qtypasadfzxcload&id=1Z2Y_QZXvza28ZqLUuzmWiSElvcySBf2o |
+| Any.Run   | https://app.any.run/tasks/0f400de0-00b1-4d7e-ae03-83130592a443 |
+| VirusTotal   | https://www.virustotal.com/gui/file/9373556b150ca9f92f3a9100122eed9fc3024698be63c6ed4538b9d2027c43f1/detection |
 
 | Type | Value |
-| MD5 | e3882832f8349d3686e6a6b83ed715c0 |
-| SHA-1 | d4ff6784fb1e67f35cd3ee43e014f12e2b9a01ec |
-| SHA-256 | 9373556b150ca9f92f3a9100122eed9fc3024698be63c6ed4538b9d2027c43f1 |
+|-------------|--------------------|
+| MD5   | e3882832f8349d3686e6a6b83ed715c0 |
+| SHA-1   | d4ff6784fb1e67f35cd3ee43e014f12e2b9a01ec |
+| SHA-256   | 9373556b150ca9f92f3a9100122eed9fc3024698be63c6ed4538b9d2027c43f1 |
 
-<table>
-<colgroup>
-<col width="30%" />
-<col width="70%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Field</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td markdown="span">First column **fields**</td>
-<td markdown="span">Some descriptive text. This is a markdown link to [Google](http://google.com). Or see [some link][mydoc_tags].</td>
-</tr>
-<tr>
-<td markdown="span">Second column **fields**</td>
-<td markdown="span">Some more descriptive text.
-</td>
-</tr>
-</tbody>
-</table>
+
 
 Appears to be a Password viewer/downloader.
 
