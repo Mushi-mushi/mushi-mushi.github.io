@@ -142,7 +142,6 @@ Jerry
 | VirusTotal | https://www.virustotal.com/gui/file/b994ae5cbfb5ad308656e9a8bf7a4a866fdeb9e23699f89f048d7f92e6bb8577/details |
 
 <br/><br/>
-
 | Type | Value |
 |:--------|:-------|
 | MD5 | a1cd6a64e8f8ad5d4b6c07dc4113c7ec |
@@ -158,7 +157,6 @@ Sunset
 ![](/images/new-foe/Sunset.jpg){: width="600" height="600")}
 
 <br/><br/>
-
 | Source | Link |
 |:--------|:-------|
 | Google drive   | https://drive.google.com/uc?export=qtypasadfzxcload&id=1Z2Y_QZXvza28ZqLUuzmWiSElvcySBf2o |
