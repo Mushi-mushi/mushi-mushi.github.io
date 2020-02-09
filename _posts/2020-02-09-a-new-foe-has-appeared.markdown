@@ -8,3 +8,4 @@ categories: malware
 ![title](/images/new-foe.jpg){: width="300" height="300")}
 ![title](/images/new-foe.jpg){: width="600" height="600")}
 ![title](/images/new-foe.jpg){: width="600")}
+![title](/images/new-foe.jpg){: width="300")}
