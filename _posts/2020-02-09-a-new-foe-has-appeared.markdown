@@ -18,11 +18,27 @@ As mentionned before, researchers had already figure out that the document was f
 
 ![](/images/new-foe/new-foe/Mickey.jpg){: width="600" height="600")}
 
-As a result, I headed to [AnyRun][link2] in order to fetch the RAT that I now needed to unpack.
-
+As a result, I headed to [AnyRun][link2] in order to fetch the RAT that I now needed to unpack. After running strings on the executable for good mesure, I cloned the [python-exe-unpacker][link3] and unpacked the file:
+{% highlight bash%}
+root@ubuntu:/opt/python-exe-unpacker$ sudo python python_exe_unpack.py -i prc.bin
+[*] On Python 3.6
+[*] Processing prc.bin
+[*] Pyinstaller version: 2.1+
+[*] This exe is packed using pyinstaller
+[*] Unpacking the binary now
+[*] Python version: 37
+[*] Length of package: 6760411 bytes
+[*] Found 39 files in CArchive
+[*] Beginning extraction...please standby
+[!] Warning: The script is running in a different python version than the one used to build the executable
+    Run this script in Python37 to prevent extraction errors(if any) during unmarshalling
+[*] Found 324 files in PYZ archive
+[*] Successfully extracted pyinstaller exe.
+{% endhighlight %}
 
 
 
 
 [link1]:https://infosecuritygeek.com/reversing-a-simple-python-ransomware/  
 [link2]:https://app.any.run/tasks/1d7567d9-0eac-4944-ba38-4894fdfe1c2f/
+[link3]:https://github.com/countercept/python-exe-unpacker
