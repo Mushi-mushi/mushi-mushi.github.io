@@ -131,6 +131,7 @@ We can also see that two payloads are hardcoded into the file. Both are hidden w
 
 Jerry
 -----
+<img src="/images/new-foe/Jerry.jpg" class="align-left" alt="">
 ![](/images/new-foe/Jerry.jpg){: .align-left}
 
 | Source | Link |
@@ -138,13 +139,14 @@ Jerry
 | Google drive | https://drive.google.com/uc?export=qtypasadfzxcload&id=1JRWUcux5uocl9gNZ3f8Ue--P1kLjZkQC |
 | Any.Run | https://app.any.run/tasks/da50d156-3183-46f0-ab13-722ee395d932 |
 | VirusTotal | https://www.virustotal.com/gui/file/b994ae5cbfb5ad308656e9a8bf7a4a866fdeb9e23699f89f048d7f92e6bb8577/details |
+|-------------|--------------------|
 
 | Type | Value |
 |-------------|--------------------|
 | MD5 | a1cd6a64e8f8ad5d4b6c07dc4113c7ec |
 | SHA-1 | 60e2f48a51c061bba72a08f34be781354f87aa49 |
 | SHA-256 | b994ae5cbfb5ad308656e9a8bf7a4a866fdeb9e23699f89f048d7f92e6bb8577 |
-
+|-------------|--------------------|
 
 Appears to be NirCmd. NirCmd is a small command-line utility that allows you to do some useful tasks without displaying any user interface. By running NirCmd with simple command-line option, you can write and delete values and keys in the Registry, write values into INI file, dial to your internet account or connect to a VPN network, restart windows or shut down the computer, create shortcut to a file, change the created/modified date of a file, change your display settings, turn off your monitor, open the door of your CD-ROM drive, and more...
 
