@@ -152,13 +152,11 @@ Sunset
 ![](/images/new-foe/Sunset.jpg){: width="600" height="600")}
 
 | Source | Link |
-| --- | --- |
 | Google drive | https://drive.google.com/uc?export=qtypasadfzxcload&id=1Z2Y_QZXvza28ZqLUuzmWiSElvcySBf2o |
 | Any.Run | https://app.any.run/tasks/0f400de0-00b1-4d7e-ae03-83130592a443 |
 | VirusTotal | https://www.virustotal.com/gui/file/9373556b150ca9f92f3a9100122eed9fc3024698be63c6ed4538b9d2027c43f1/detection |
 
 | Type | Value |
-| --- | --- |
 | MD5 | e3882832f8349d3686e6a6b83ed715c0 |
 | SHA-1 | d4ff6784fb1e67f35cd3ee43e014f12e2b9a01ec |
 | SHA-256 | 9373556b150ca9f92f3a9100122eed9fc3024698be63c6ed4538b9d2027c43f1 |
