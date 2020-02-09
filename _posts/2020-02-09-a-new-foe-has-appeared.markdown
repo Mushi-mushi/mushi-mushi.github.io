@@ -159,6 +159,24 @@ Sunset
 | SHA-1 | d4ff6784fb1e67f35cd3ee43e014f12e2b9a01ec |
 | SHA-256 | 9373556b150ca9f92f3a9100122eed9fc3024698be63c6ed4538b9d2027c43f1 |
 
+<table class="tg">
+  <tr>
+    <th class="tg-baqh">Source</th>
+    <th class="tg-baqh">Link</th>
+  </tr>
+  <tr>
+    <td class="tg-baqh">Google drive</td>
+    <td class="tg-baqh">https://drive.google.com/uc?export=qtypasadfzxcload&id=1Z2Y_QZXvza28ZqLUuzmWiSElvcySBf2o</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">Any.Run</td>
+    <td class="tg-baqh">https://app.any.run/tasks/0f400de0-00b1-4d7e-ae03-83130592a443</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">VirusTotal	</td>
+    <td class="tg-baqh">https://www.virustotal.com/gui/file/9373556b150ca9f92f3a9100122eed9fc3024698be63c6ed4538b9d2027c43f1/detection</td>
+</table>
+
 Appears to be a Password viewer/downloader.
 
 C2
