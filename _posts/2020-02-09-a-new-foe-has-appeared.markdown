@@ -194,8 +194,8 @@ JhoneRAT
 --------
 For a more detailed analysis of this sample, Thalos actually published a very nice [writeup][link5]. two days after I finished my analysis. Needless to say that for a first stab at malware analysis, I was pretty excited when I realized that not only I managed to analyze the sample properly, but I was also able to warn our customers one day before Talos named the RAT.
 
-Ressources:
-===========
+Additional Ressources:
+----------------------
 https://zondatw.github.io/2019/pyinstaller_decompile/
 https://www.fireeye.com/content/dam/fireeye-www/blog/pdfs/FlareOn6_Challenge7_Solution_WOPR.pdf
 https://infosecuritygeek.com/reversing-a-simple-python-ransomware/
