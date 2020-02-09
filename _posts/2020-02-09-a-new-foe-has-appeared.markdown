@@ -13,10 +13,6 @@ The idea to finally set up my own blog stems from my first malware analysis wher
 Sample
 =======
 
-
-{% twitter https://twitter.com/rubygems/status/518821243320287232 %}
-
-
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Check out my iOS game, High5! <a href="https://t.co/QZEKLg3G2i">https://t.co/QZEKLg3G2i</a></p>&mdash; Keita Ito (@keitaitok) <a href="https://twitter.com/keitaitok/status/504110217940836353">August 26, 2014</a></blockquote>
 
 
