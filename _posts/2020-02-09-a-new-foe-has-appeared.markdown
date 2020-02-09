@@ -133,6 +133,13 @@ Jerry
 -----
 ![](/images/new-foe/Jerry.jpg){: .align-right}
 
+| Bill of Materials | Purpose | Cost: |
+|---|:---|:---|
+| Raspberry Pi Computer Units  | Runs main program, computations and calculations  | **TBA**  |
+| Camera/Sensors  | Monitors parking lot entrances and uses [OpenCV](http://opencv.org/) | **TBA**   |
+| Network Adapters  | Transmits data regarding capacity and current conditions    | **TBA**   |
+| External Materials  | (*Waterproof Case, Ethernet, Power Cords*)   | **TBA**   |
+
 | Source | Link |
 |:--------|:-------|
 | Google drive | https://drive.google.com/uc?export=qtypasadfzxcload&id=1JRWUcux5uocl9gNZ3f8Ue--P1kLjZkQC |
