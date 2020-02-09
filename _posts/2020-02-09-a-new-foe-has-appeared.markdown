@@ -54,7 +54,7 @@ root@ubuntu:/opt/python-exe-unpacker/unpacked/prc.bin$ sudo uncompyle6 final2
 # path final2 must point to a .py or .pyc file
 {% endhighlight %}
 
-We are not greeted with yet another error:
+We are now greeted with yet another error:
 {% highlight bash%}
 root@ubuntu:/opt/python-exe-unpacker/unpacked/prc.bin$ sudo uncompyle6 final2.pyc
 Traceback (most recent call last):
@@ -65,6 +65,9 @@ KeyError: b'\xe3\x00\x00\x00'
 TypeError: ord() expected string of length 1, but int found
 {% endhighlight %}
 
+This is due to the fact that the first 18-bytes of data on the header is missing. To find the missing bytes, we just need to open one of the other .pyc files available:
+
+![](/images/new-foe/original.png){: width="600" height="600")}![](/images/new-foe/base64.png){: width="600" height="600")}
 
 {% highlight bash%}
 {% endhighlight %}
