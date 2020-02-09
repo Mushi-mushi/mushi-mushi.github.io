@@ -8,7 +8,7 @@ categories: malware
 
 Introduction
 ------------
-The idea to finally set up my own blog stems from my first malware analysis where a word document was spotted on Twitter by one of my colleagues. Following the Twitter thread shows that some researchers had already done some preliminary analysis but the main payload still needed to be unpacked and analyzed. After reaching out to one of the researchers (@Arkbird_SOLG) I was directed to a great tutorial about how to unpack python executable ([Tutorial][link1])
+The idea to finally set up my own blog stems from my first malware analysis where a word document was spotted on Twitter by one of my colleagues. Following the Twitter thread showed that some researchers had already done some preliminary analysis but the main payload still needed to be unpacked and analyzed. After reaching out to one of the researchers (@Arkbird_SOLG) I was directed to a great tutorial about how to unpack python executable ([Tutorial][link1])
 
 Sample
 ------
