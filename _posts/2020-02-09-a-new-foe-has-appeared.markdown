@@ -134,6 +134,7 @@ Jerry
 ![](/images/new-foe/Jerry.jpg){: .img-left}
 
 <br/>
+<br/>
 
 | Source | Link |
 |:--------|:-------|
