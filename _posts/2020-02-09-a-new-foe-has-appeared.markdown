@@ -8,7 +8,7 @@ categories: malware
 
 Introduction
 ------------
-The idea to finally set up my own blog stems from my first malware analysis where a word document was spotted on Twitter by one of my colleague. Following the Twitter thread shows that some researchers had already did some preliminary analysis but the main payload still needed to be unpacked and analized. After reaching out to one of the researcher (@Arkbird_SOLG) I was directed to a great tutorial about how to unpack python executable ([Tutorial][link1])
+The idea to finally set up my own blog stems from my first malware analysis where a word document was spotted on Twitter by one of my colleagues. Following the Twitter thread shows that some researchers had already done some preliminary analysis but the main payload still needed to be unpacked and analyzed. After reaching out to one of the researchers (@Arkbird_SOLG) I was directed to a great tutorial about how to unpack python executable ([Tutorial][link1])
 
 Sample
 ------
@@ -18,7 +18,7 @@ As mentionned before, researchers had already figure out that the document was f
 
 ![](/images/new-foe/new-foe/Mickey.jpg){: width="600" height="600")}
 
-As a result, I headed to [AnyRun][link2] in order to fetch the RAT that I now needed to unpack. After running strings on the executable for good mesure, I cloned the [python-exe-unpacker][link3] and unpacked the file:
+As a result, I headed to [AnyRun][link2] in order to fetch the RAT that I now needed to unpack. After running strings on the executable for good measure, I cloned the [python-exe-unpacker][link3] and unpacked the file:
 {% highlight bash%}
 root@ubuntu:/opt/python-exe-unpacker$ sudo python python_exe_unpack.py -i prc.bin
 [*] On Python 3.6
@@ -46,7 +46,7 @@ Traceback (most recent call last):
 TypeError: not all arguments converted during string formatting
 {% endhighlight %}
 
-We realize that we need to change our file extension:
+We realize that we need to change the file extension:
 
 {% highlight bash%}
 root@ubuntu:/opt/python-exe-unpacker/unpacked/prc.bin$ sudo uncompyle6 final2
@@ -120,21 +120,18 @@ As only the fonction's name are obfuscated, it's fairly easy to understand the c
 {% highlight bash%}
 content1 = fct_exec('wmic diskdrive get SerialNumber /format:list').replace(' ', '').replace('SerialNumber=', '')
 {% endhighlight %}
-Getting the disk serial number as an VM evasion technique.
+Getting the disk serial number as a VM evasion technique.
 
 {% highlight bash%}
 key = wreg.OpenKey(wreg.HKEY_CURRENT_USER, 'Keyboard Layout\\Preload', 0, wreg.KEY_ALL_ACCESS)
 {% endhighlight %}
-Checking the keyboard layout
+Checking the keyboard layout.
 
-We can also see that two payloads are hardcoded into the file. Both are hidden within an picture the same way the dropper was:
+We can also see that two payloads are hardcoded into the file. Both are hidden within a picture the same way the dropper was:
 
 Jerry
 -----
 ![](/images/new-foe/Jerry.jpg){: .img-left}
-
-<br/>
-<br/>
 
 | Source | Link |
 |:--------|:-------|
@@ -150,14 +147,12 @@ Jerry
 | SHA-1 | 60e2f48a51c061bba72a08f34be781354f87aa49 |
 | SHA-256 | b994ae5cbfb5ad308656e9a8bf7a4a866fdeb9e23699f89f048d7f92e6bb8577 |  
 
-Appears to be NirCmd. 
+Appears to be NirCmd: 
 > NirCmd is a small command-line utility that allows you to do some useful tasks without displaying any user interface. By running NirCmd with simple command-line option, you can write and delete values and keys in the Registry, write values into INI file, dial to your internet account or connect to a VPN network, restart windows or shut down the computer, create shortcut to a file, change the created/modified date of a file, change your display settings, turn off your monitor, open the door of your CD-ROM drive, and more...
 
 Sunset
 ------
 ![](/images/new-foe/Sunset.jpg){: width="600" height="600")}
-
-<br/>
 
 | Source | Link |
 |:--------|:-------|
@@ -177,7 +172,7 @@ Appears to be a Password viewer/downloader.
 
 C2
 --
-Finally we can also see that the RAT is using Twitter as a C2:
+Finally, we can also see that the RAT is using Twitter as a C2:
 
 {% highlight python%}
 def mjhd(name=tw):
@@ -200,7 +195,7 @@ def mjhd(name=tw):
 
 JhoneRAT
 --------
-For a more detailed analysis of this sample, Thalos actually published a very nice [writeup][link5]. two days after I finished my analysis. Needless to say that for a first stab at malware analysis, I was pretty excited when I realized that not only I managed to analyze the sample properly, but I was also able to warn our customers one day before Talos named the RAT.
+For a more detailed analysis of this sample, Thalos actually published a very nice [writeup][link5]. two days after I finished my analysis. Needless to say that for a first stab at malware analysis, I was pretty excited when I realized that not only I managed to analyze the sample properly, but I was also able to warn our customers one day before Talos published its writeup.
 
 Additional Ressources:
 ----------------------
