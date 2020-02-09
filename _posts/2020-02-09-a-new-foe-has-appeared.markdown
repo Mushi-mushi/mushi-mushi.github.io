@@ -131,7 +131,7 @@ We can also see that two payloads are hardcoded into the file. Both are hidden w
 
 Jerry
 -----
-![](/images/new-foe/Jerry.jpg)|
+![](/images/new-foe/Jerry.jpg){: .align-left}
 
 | Source | Link |
 |-------------|--------------------|
