@@ -21,7 +21,7 @@ As mentionned before, researchers had already figure out that the document was f
 
 As a result, I headed to [AnyRun][link2] in order to fetch the RAT that I now needed to unpack. After running strings on the executable for good measure, I cloned the [python-exe-unpacker][link3] and unpacked the file:
 {% highlight bash%}
-root@ubuntu:/opt/python-exe-unpacker$ sudo python python_exe_unpack.py -i prc.bin
+user@ubuntu:/opt/python-exe-unpacker$ sudo python python_exe_unpack.py -i prc.bin
 [*] On Python 3.6
 [*] Processing prc.bin
 [*] Pyinstaller version: 2.1+
@@ -41,7 +41,7 @@ Now that we have the compiled python script (.pyc) and the python libraries (.py
 
 After failing to use sudo and getting some errors with uncompyle6:
 {% highlight bash%}
-root@ubuntu:/opt/python-exe-unpacker/unpacked/prc.bin$ uncompyle6
+user@ubuntu:/opt/python-exe-unpacker/unpacked/prc.bin$ uncompyle6
 Traceback (most recent call last):
 (...)
 TypeError: not all arguments converted during string formatting
@@ -50,16 +50,16 @@ TypeError: not all arguments converted during string formatting
 We realize that we need to change the file extension:
 
 {% highlight bash%}
-root@ubuntu:/opt/python-exe-unpacker/unpacked/prc.bin$ sudo uncompyle6 final2
+user@ubuntu:/opt/python-exe-unpacker/unpacked/prc.bin$ sudo uncompyle6 final2
 # file final2
 # path final2 must point to a .py or .pyc file
 {% endhighlight %}
 
 We are now greeted with yet another error:
 {% highlight bash%}
-root@ubuntu:/opt/python-exe-unpacker/unpacked/prc.bin$ sudo uncompyle6 final2.pyc
+user@ubuntu:/opt/python-exe-unpacker/unpacked/prc.bin$ sudo uncompyle6 final2.pyc
 Traceback (most recent call last):
-  File "/root/.local/lib/python3.6/site-packages/xdis/load.py", line 106, in load_module
+  File "/user/.local/lib/python3.6/site-packages/xdis/load.py", line 106, in load_module
     version = float(magics.versions[magic][:3])
 KeyError: b'\xe3\x00\x00\x00'
 (...)
@@ -82,7 +82,7 @@ And that the file was only getting decompiled on my windows environment...
 
 Finaly we can uncompyle the file:
 {% highlight python%}
-C:\Users\root\Desktop>uncompyle6 final2.pyc
+C:\Users\user\Desktop>uncompyle6 final2.pyc
 # uncompyle6 version 3.6.2
 # Python bytecode 3.7 (3394)
 # Decompiled from: Python 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 19:29:22) [MSC v.1916 32 bit (Intel)]
