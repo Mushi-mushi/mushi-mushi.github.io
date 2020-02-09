@@ -195,7 +195,7 @@ def mjhd(name=tw):
 
 JhoneRAT
 --------
-For a more detailed analysis of this sample, Thalos actually published a very nice [writeup][link5]. two days after I spent my night unpacking my sample. Needless to say that for a first stab at malware analysis, I was pretty excited when I realized that not only I managed to decompile and analyze the sample properly, but I was also able to send a notice to some of our stakeholders one day before Talos published its writeup.
+For a more detailed analysis of this malware, Thalos actually published a very nice [writeup][link5]. two days after I spent my night unpacking my sample. Needless to say that for a first stab at malware analysis, I was pretty excited when I realized that not only I managed to decompile and analyze the sample properly, but my team was able to send a notice to some of our stakeholders one day before Talos published its writeup.
 
 Additional Ressources:
 ----------------------
