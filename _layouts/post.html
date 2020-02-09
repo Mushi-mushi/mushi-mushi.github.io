@@ -12,7 +12,6 @@ layout: default
 	{% else %}
 		<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
 	{% endif %}
-	changed
 	<p class="meta">{% include read_time.html %}</span></p>
 	<div class="post-content">{{ content }}</div>
 	<p class="meta">Posted on <span class="postdate">{{ page.date | date: "%b %d, %Y" }}</span></p>
