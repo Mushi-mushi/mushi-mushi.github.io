@@ -36,8 +36,41 @@ root@ubuntu:/opt/python-exe-unpacker$ sudo python python_exe_unpack.py -i prc.bi
 [*] Successfully extracted pyinstaller exe.
 {% endhighlight %}
 
+Now that we have the compiled python script (.pyc) and the python libraries (.pyd) from the executable file, we need to uncompile our main executable which in this case is final2.
+
+After failing to use sudo and getting some errors with uncompyle6:
+{% highlight bash%}
+root@ubuntu:/opt/python-exe-unpacker/unpacked/prc.bin$ uncompyle6
+Traceback (most recent call last):
+(...)
+TypeError: not all arguments converted during string formatting
+{% endhighlight %}
+
+We realize that we need to change our file extension:
+
+{% highlight bash%}
+root@ubuntu:/opt/python-exe-unpacker/unpacked/prc.bin$ sudo uncompyle6 final2
+# file final2
+# path final2 must point to a .py or .pyc file
+{% endhighlight %}
+
+We are not greeted with yet another error:
+{% highlight bash%}
+root@ubuntu:/opt/python-exe-unpacker/unpacked/prc.bin$ sudo uncompyle6 final2.pyc
+Traceback (most recent call last):
+  File "/root/.local/lib/python3.6/site-packages/xdis/load.py", line 106, in load_module
+    version = float(magics.versions[magic][:3])
+KeyError: b'\xe3\x00\x00\x00'
+(...)
+TypeError: ord() expected string of length 1, but int found
+{% endhighlight %}
 
 
+{% highlight bash%}
+{% endhighlight %}
+
+{% highlight bash%}
+{% endhighlight %}
 
 [link1]:https://infosecuritygeek.com/reversing-a-simple-python-ransomware/  
 [link2]:https://app.any.run/tasks/1d7567d9-0eac-4944-ba38-4894fdfe1c2f/
