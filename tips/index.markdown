@@ -40,7 +40,7 @@ Enter      :Copy selection
 Ctrl + b ] : Paste contents of buffer_0
 {% endhighlight %}
 
-[Back to the top](##header)
+[Back to the top](#header)
 
 Upgrading Simple Shells to Fully Interactive TTYs
 =================================================
@@ -93,7 +93,7 @@ Interesting Links:
 - [Pentestmonkey][link9]: Reverse Shell Cheat Sheet
 - [W3schools][link10]: Testing new layout
 
-[Back to the top](##header)
+[Back to the top](#header)
 
 [link1]:https://jwt.io/  
 [link2]:http://jekyllrb.com
