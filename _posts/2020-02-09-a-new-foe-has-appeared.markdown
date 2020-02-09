@@ -131,7 +131,7 @@ We can also see that two payloads are hardcoded into the file. Both are hidden w
 
 Jerry
 -----
-![](/images/new-foe/new-foe/Jerry.jpg){: width="600" height="600")}
+![](/images/new-foe/Jerry.jpg){: width="600" height="600")}
 https://drive.google.com/uc?export=qtypasadfzxcload&id=1JRWUcux5uocl9gNZ3f8Ue--P1kLjZkQC
 
 https://www.virustotal.com/gui/file/b994ae5cbfb5ad308656e9a8bf7a4a866fdeb9e23699f89f048d7f92e6bb8577/details
@@ -150,7 +150,7 @@ Appears to be NirCmd. NirCmd is a small command-line utility that allows you to 
 
 Sunset
 ------
-![](/images/new-foe/new-foe/Sunset.jpg){: width="600" height="600")}
+![](/images/new-foe/Sunset.jpg){: width="600" height="600")}
 https://drive.google.com/uc?export=qtypasadfzxcload&id=1Z2Y_QZXvza28ZqLUuzmWiSElvcySBf2o
 
 https://app.any.run/tasks/0f400de0-00b1-4d7e-ae03-83130592a443
