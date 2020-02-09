@@ -430,6 +430,12 @@ if __name__ == '__main__':
 {% highlight bash%}
 {% endhighlight %}
 
+Ressources:
+===========
+https://zondatw.github.io/2019/pyinstaller_decompile/
+https://www.fireeye.com/content/dam/fireeye-www/blog/pdfs/FlareOn6_Challenge7_Solution_WOPR.pdf
+https://infosecuritygeek.com/reversing-a-simple-python-ransomware/
+
 [link1]:https://infosecuritygeek.com/reversing-a-simple-python-ransomware/  
 [link2]:https://app.any.run/tasks/1d7567d9-0eac-4944-ba38-4894fdfe1c2f/
 [link3]:https://github.com/countercept/python-exe-unpacker
