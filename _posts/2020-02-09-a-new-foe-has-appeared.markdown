@@ -199,13 +199,17 @@ For a more detailed analysis of this malware, Thalos actually published a very n
 
 Additional Ressources:
 ----------------------
-[Zondatw.github.io](https://zondatw.github.io/2019/pyinstaller_decompile/)
-[FlareOn6 Challenge7](https://www.fireeye.com/content/dam/fireeye-www/blog/pdfs/FlareOn6_Challenge7_Solution_WOPR.pdf)
-[Reversing a simple python ransomware](https://infosecuritygeek.com/reversing-a-simple-python-ransomware/)
-[The structure of pyc files](https://nedbatchelder.com/blog/200804/the_structure_of_pyc_files.html)
+[Zondatw.github.io][link6]
+[FlareOn6 Challenge7][link7]
+[Reversing a simple python ransomware][link8]
+[The structure of pyc files][link9]
 
 [link1]:https://infosecuritygeek.com/reversing-a-simple-python-ransomware/  
 [link2]:https://app.any.run/tasks/1d7567d9-0eac-4944-ba38-4894fdfe1c2f/
 [link3]:https://github.com/countercept/python-exe-unpacker
 [link4]:https://pastebin.com/KPYnUzV0
 [link5]:https://blog.talosintelligence.com/2020/01/jhonerat.html?m=1
+[link6]:https://zondatw.github.io/2019/pyinstaller_decompile/
+[link7]:https://www.fireeye.com/content/dam/fireeye-www/blog/pdfs/FlareOn6_Challenge7_Solution_WOPR.pdf
+[link8]:https://infosecuritygeek.com/reversing-a-simple-python-ransomware/
+[link9]:https://nedbatchelder.com/blog/200804/the_structure_of_pyc_files.html
