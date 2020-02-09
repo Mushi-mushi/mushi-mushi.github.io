@@ -24,8 +24,8 @@ kbd {
   vertical-align: middle;
 }
 table {
-  max-width: 600px;
-  min-width: 500px;
+  table-layout: fixed;
+  width: 600px;
   padding: 0; }
   table tr {
     border-top: 1px solid #cccccc;
