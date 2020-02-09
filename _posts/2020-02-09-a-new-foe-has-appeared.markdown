@@ -131,9 +131,7 @@ We can also see that two payloads are hardcoded into the file. Both are hidden w
 
 Jerry
 -----
-<div style="text-align: left"><img src="/images/new-foe/Jerry.jpg" width="100" /></div>
-<div style="text-align: left"><img src="/images/new-foe/Jerry.jpg" /></div>
-![](/images/new-foe/Jerry.jpg){: .align-left}
+![](/images/new-foe/Jerry.jpg){: .align-right}
 
 {:class="table table-bordered"}
 | Source | Link |
