@@ -17,6 +17,7 @@ List al started services
 {% highlight bash%}
 cmd.exe /c wmic service where started=true get name, startname
 {% endhighlight %}
+
 Tmux shortcut
 =============
 {% highlight bash%}
