@@ -3,6 +3,12 @@ layout: tips
 title: Tips and Tricks
 ---
 
+Finding writable locations
+==========================
+{% highlight bash%}
+find / -type d -writable 2> /dev/null
+{% endhighlight %}
+
 Creating Custom Wordlists
 =========================
 This can be easily achieved using [exrex][link13]:
