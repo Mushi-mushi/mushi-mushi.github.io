@@ -7,7 +7,7 @@ Creating Custom Wordlists
 =========================
 This can be easily achieved using [exrex][link13]:
 {% highlight bash%}
-./exrex.py "(winter|summer|spring|fall|autumn)201[678]"
+python3 exrex.py "(winter|summer|spring|fall|autumn)201[678]"
 {% endhighlight %}
 [Cewl][link14] can also be used to automaticly generate a wordlist by scrapping a website:
 {% highlight bash%}
