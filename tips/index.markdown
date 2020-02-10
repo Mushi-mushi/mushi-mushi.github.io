@@ -3,6 +3,16 @@ layout: tips
 title: Tips and Tricks
 ---
 
+Creating Custom Wordlists
+=========================
+This can be easily achieved using [exrex][link13]:
+{% highlight bash%}
+./exrex.py "(winter|summer|spring|fall|autumn)201[678]"
+{% endhighlight %}
+[Cewl][link14] can also be used to automaticly generate a wordlist by scrapping a website:
+{% highlight bash%}
+cewl -d 0 https://www.testing.com/
+{% endhighlight %}
 One Liners
 ==========
 Dowloading file via certutil
@@ -108,4 +118,5 @@ Interesting Links:
 [link10]:https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_subnav
 [link11]:https://github.com/infodox/python-pty-shells
 [link12]:https://longqian.me/2017/02/09/github-jekyll-tag/
-
+[link13]:https://github.com/asciimoo/exrex
+[link14]:https://digi.ninja/projects/cewl.php
