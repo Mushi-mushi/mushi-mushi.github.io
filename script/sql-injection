@@ -6,7 +6,7 @@ import json
 
 while True:
     injection_str = input("Enter string: ")
-    payload = json.dumps({'ID': injection_str.strip()})
+    payload = json.dumps({'ID': injection_str})
     #print(payload)
     payloadb64=b64encode(payload.encode('utf-8')).decode('utf-8')
     #print(payloadb64)
