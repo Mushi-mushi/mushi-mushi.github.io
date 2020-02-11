@@ -33,6 +33,14 @@ List al started services
 {% highlight bash%}
 cmd.exe /c wmic service where started=true get name, startname
 {% endhighlight %}
+Wfuzz
+{% highlight bash%}
+wfuzz -w /wordlist/directory-medium.txt --hc 404 http://testing.com/test.php?FUZZ=1
+{% endhighlight %}
+--hc 404 = exclude 404 response  
+--hh 777 = exclude response with 777char  
+For more details: [wfuzz][link15] 
+
 
 Tmux shortcut
 =============
@@ -126,3 +134,4 @@ Interesting Links:
 [link12]:https://longqian.me/2017/02/09/github-jekyll-tag/
 [link13]:https://github.com/asciimoo/exrex
 [link14]:https://digi.ninja/projects/cewl.php
+[link15]:https://wfuzz.readthedocs.io/en/latest/user/getting.html#getting-help
