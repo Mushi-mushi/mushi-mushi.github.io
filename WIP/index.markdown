@@ -13,5 +13,11 @@
 
 [ ![mushimushi](https://www.hackthebox.eu/badge/60476)](https://www.hackthebox.eu/home/users/profile/60476)
 [ ![mushimushi](https://https://www.hackthebox.eu/badge/image/60476)](https://www.hackthebox.eu/home/users/profile/60476)
+
+![]("https://www.hackthebox.eu/badge/60476")
 ![](https://www.hackthebox.eu/badge/60476)
 
+
+[<img src="https://https://www.hackthebox.eu/badge/image/60476>](https://www.hackthebox.eu/home/users/profile/60476)
+[<img src="https://https://www.hackthebox.eu/badge/image/60476>](https://www.hackthebox.eu/home/users/profile/60476)
+[![Mushimushi](https://https://www.hackthebox.eu/badge/image/60476)](https://www.hackthebox.eu/home/users/profile/60476)
