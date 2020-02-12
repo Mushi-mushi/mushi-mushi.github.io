@@ -14,11 +14,7 @@ The idea to finally set up my own blog stems from my first malware analysis wher
 Sample
 ------
 ![](/images/Tweet1.png){: .img-left}{: width="50%"}  
-
 <BR CLEAR="left">
-
-working4?)
- 
 As mentionned before, researchers had already figure out that the document was first downloading a dropper by reaching out to an googledrive link, downloading a picture from which the python RAT was extracted. 
 
 As a result, I headed to [AnyRun][link2] in order to fetch the RAT that I now needed to unpack. After running strings on the executable for good measure, I cloned the [python-exe-unpacker][link3] and unpacked the file:
