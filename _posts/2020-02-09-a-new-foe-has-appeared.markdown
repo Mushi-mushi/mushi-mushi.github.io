@@ -13,7 +13,7 @@ The idea to finally set up my own blog stems from my first malware analysis wher
 
 Sample
 ------
-![](/images/Tweet1.jpg){: .img-left}
+![](/images/Tweet1.png){: .img-left}
 
 As mentionned before, researchers had already figure out that the document was first downloading a dropper by reaching out to an googledrive link, downloading a picture from which the python RAT was extracted. 
 
