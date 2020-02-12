@@ -57,13 +57,13 @@ a[href="#spoiler"] {
   cursor: default;
   margin-bottom: 2px;
   padding: 2px;
-  background-color: #839496;
+  background-color: #002a35;
   border-left: 2px solid #cb4b16;
   display: inline-block;
 }
 a[href="#spoiler"]::after {
   content: attr(title);
-  color: #cb4b16;
+  color: #2aa198;
   padding: 0 0.5em;
 }
 a[href="#spoiler"]:hover::after,
