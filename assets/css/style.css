@@ -55,15 +55,15 @@ table {
 a[href="#spoiler"] {
   text-decoration: none !important;
   cursor: default;
-  margin-bottom: 10px;
-  padding: 10px;
-  background-color: #FFF8DC;
-  border-left: 2px solid #ffeb8e;
+  margin-bottom: 2px;
+  padding: 2px;
+  background-color: #839496;
+  border-left: 2px solid #cb4b16;
   display: inline-block;
 }
 a[href="#spoiler"]::after {
   content: attr(title);
-  color: #FFF8DC;
+  color: #cb4b16;
   padding: 0 0.5em;
 }
 a[href="#spoiler"]:hover::after,
