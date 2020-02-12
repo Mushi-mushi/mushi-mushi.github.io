@@ -36,11 +36,14 @@ cmd.exe /c wmic service where started=true get name, startname
 Wfuzz
 {% highlight bash%}
 wfuzz -w /wordlist/directory-medium.txt --hc 404 http://testing.com/test.php?FUZZ=1
-{% endhighlight %}
 --hc 404 = exclude 404 response  
 --hh 777 = exclude response with 777char  
 For more details: [wfuzz][link15] 
-
+{% endhighlight %}
+Find all file in a directory and executing a command.
+{% highlight bash%}
+find . -type f -exec cat {} \;
+{% endhighlight %}
 
 Tmux shortcut
 =============
