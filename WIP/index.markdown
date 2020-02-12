@@ -11,4 +11,4 @@
 <blockquote class="twitter-tweet"><p lang="und" dir="ltr"> <a href="https://t.co/iNtUqG1XvS">pic.twitter.com/iNtUqG1XvS</a></p>&mdash; Samir (@SBousseaden) <a href="https://twitter.com/SBousseaden/status/1217083746739982336?ref_src=twsrc%5Etfw">January 14, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-[ ![mushimushi](https://https://www.hackthebox.eu/badge/60476)](https://www.hackthebox.eu/home/users/profile/60476)
+[ ![mushimushi](https://www.hackthebox.eu/badge/60476)](https://www.hackthebox.eu/home/users/profile/60476)
