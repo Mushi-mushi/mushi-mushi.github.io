@@ -44,7 +44,11 @@ Find all file in a directory and executing a command.
 {% highlight bash%}
 find . -type f -exec cat {} \;
 {% endhighlight %}
-
+Easy transfert
+{% highlight bash%}
+base64 -w 0 filetotransfert
+echo "iOgogIG1haW4oKQo=" | base64 -d > filename
+{% endhighlight %}
 Tmux shortcut
 =============
 {% highlight bash%}
