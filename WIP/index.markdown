@@ -1,0 +1,1 @@
+[](#spoiler "Spoiler Filled Text")
