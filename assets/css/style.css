@@ -52,27 +52,6 @@ table {
       margin-bottom: 0;
 }
 
-a[href="#spoiler"] {
-  text-decoration: none !important;
-  cursor: default;
-  margin-bottom: 2px;
-  padding: 2px;
-  background-color: #002a35;
-  border-left: 2px solid #cb4b16;
-  display: inline-block;
-}
-a[href="#spoiler"]::after {
-  content: attr(title);
-  color: #2aa198;
-  padding: 0 0.5em;
-}
-a[href="#spoiler"]:hover::after,
-a[href="#spoiler"]:active::after {
-  cursor: auto;
-  color: black;
-  transition: color .5s ease-in-out;
-}
-
 body {
 	line-height: 1;
 }
