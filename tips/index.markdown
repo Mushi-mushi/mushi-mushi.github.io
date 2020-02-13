@@ -37,6 +37,14 @@ Finding writable locations
 {% highlight bash%}
 find / -type d -writable 2> /dev/null
 {% endhighlight %}
+Looking for creds in the directory
+{% highlight bash%}
+grep -rnw ./ -e 'password' -e 'user' -e 'usr' -e 'pass'
+{% endhighlight %}
+Search for flag
+{% highlight bash%}
+find / -type f \( -name "root.txt" -o -name "user.txt" \) 2>/dev/nul
+{% endhighlight %}
 [Back to the top](#header)
 
 Creating Custom Wordlists
