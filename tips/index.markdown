@@ -3,22 +3,6 @@ layout: tips
 title: Tips and Tricks
 ---
 
-Finding writable locations
-==========================
-{% highlight bash%}
-find / -type d -writable 2> /dev/null
-{% endhighlight %}
-
-Creating Custom Wordlists
-=========================
-This can be easily achieved using [exrex][link13]:
-{% highlight bash%}
-python3 exrex.py "(winter|summer|spring|fall|autumn)20[12][678]" -o wordlist
-{% endhighlight %}
-[Cewl][link14] can also be used to automaticly generate a wordlist by scrapping a website:
-{% highlight bash%}
-cewl -d 0 https://www.testing.com/
-{% endhighlight %}
 One Liners
 ==========
 Dowloading file via certutil
@@ -49,10 +33,38 @@ Easy transfert
 base64 -w 0 filetotransfert
 echo "iOgogIG1haW4oKQo=" | base64 -d > filename
 {% endhighlight %}
+Finding writable locations
+{% highlight bash%}
+find / -type d -writable 2> /dev/null
+{% endhighlight %}
+[Back to the top](#header)
+
+Creating Custom Wordlists
+=========================
+This can be easily achieved using [exrex][link13]:
+{% highlight bash%}
+python3 exrex.py "(winter|summer|spring|fall|autumn)20[12][678]" -o wordlist
+{% endhighlight %}
+[Cewl][link14] can also be used to automaticly generate a wordlist by scrapping a website:
+{% highlight bash%}
+cewl -d 0 https://www.testing.com/
+{% endhighlight %}
+[Back to the top](#header)
+
+VIM shortcut
+=============
+{% highlight bash%}
+gg            :beginning of the text
+dd            :delete line
+g g " + y G   :yank all line 
+: % y +       :yank all line (shorter)
+{% endhighlight %}
+[Back to the top](#header)
+
 Tmux shortcut
 =============
 {% highlight bash%}
-Ctrl + b c :Create window</bloc>
+Ctrl + b c :Create window
 Ctrl + b , :Rename current window
 Ctrl + b % :Split pane vertically
 Ctrl + b " :Split pane horizontally
@@ -70,7 +82,6 @@ Esc        :Clear selection
 Enter      :Copy selection
 Ctrl + b ] : Paste contents of buffer_0
 {% endhighlight %}
-
 [Back to the top](#header)
 
 Upgrading Simple Shells to Fully Interactive TTYs
@@ -97,7 +108,6 @@ stty rows number_of_row columns number_of_columns
 {% endhighlight %}
 
 Enjoy!
-
 [Back to the top](#header)
 
 Finding non standard binaries 
@@ -109,7 +119,6 @@ for i in $(ls /sbin/*); do dpkg --search $i 1>/dev/null; done
 {% endhighlight %}
 
 To investigate on different location in the $PATH
-
 [Back to the top](#header)
 
 Interesting Links:
@@ -124,7 +133,6 @@ Interesting Links:
 - [Pentestmonkey][link9]: Reverse Shell Cheat Sheet
 - [W3schools][link10]: Testing new layout
 - [Jekyll Tags][link12]: For future reference
-
 [Back to the top](#header)
 
 [link1]:https://jwt.io/  
