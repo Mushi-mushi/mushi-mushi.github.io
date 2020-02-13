@@ -56,6 +56,7 @@ VIM shortcut
 {% highlight bash%}
 gg            :beginning of the text
 dd            :delete line
+gg dG         :delete all
 g g " + y G   :yank all line 
 : % y +       :yank all line (shorter)
 {% endhighlight %}
