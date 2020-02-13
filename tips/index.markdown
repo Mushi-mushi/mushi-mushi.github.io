@@ -39,7 +39,10 @@ find / -type d -writable 2> /dev/null
 {% endhighlight %}
 Looking for creds in the directory
 {% highlight bash%}
+Grabbing full word
 grep -rnw ./ -e 'password' -e 'password' -e 'passwd'
+Grabbing partial word
+grep -rn ./ -e 'passwd'
 {% endhighlight %}
 Search for flag
 {% highlight bash%}
