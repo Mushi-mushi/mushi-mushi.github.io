@@ -113,8 +113,8 @@ python3 -c 'import pty; pty.spawn("/bin/bash")'
 Then press CTRL+Z to return to your local shell
 
 {% highlight bash%}
+stty -a or (stty size)
 stty raw -echo
-stty -a
 {% endhighlight %}
 
 Note the number of rows and columns before pressing fg to return to the box
