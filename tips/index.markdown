@@ -91,7 +91,12 @@ Ctrl + b z :Toggle pane zoom
 Ctrl + b ! :Convert pane into a window
 Ctrl + b x :Close current pane
 Ctrl + b [ :Enter copy mode
-q : Quit mode
+  Ctrl + s      :Enable you to search 
+                 (press enter to validate and n for next item)
+  Ctrl + space  : Start selecting
+  Ctrl + w      :Copy selection
+  Ctrl + b + ]  :Paste the selection 
+  q : Quit copy mode
 / :Search forward
 ? :Search backward
 n :Next keyword occurance
