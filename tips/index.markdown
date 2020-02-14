@@ -3,6 +3,26 @@ layout: tips
 title: Tips and Tricks
 ---
 
+Metasploit
+==========
+Updates
+{% highlight bash%}
+searchsploit -u
+apt  update ; apt install metasploit-framework
+{% endhighlight %}
+Searchsploit
+{% highlight bash%}
+searchsploit -m :copy exploit in pwn
+searchsploit -e :examine exploit
+searchsploit -p :print full path
+{% endhighlight %}
+Load exploit to msf
+{% highlight bash%}
+msf > loadpath /usr/share/metasploit-framework/modules/
+or
+mv exploit.rb ~/.msf4/modules/exploit/exploit.rb and msf > reload_all
+{% endhighlight %}
+
 One Liners
 ==========
 Dowloading file via certutil
