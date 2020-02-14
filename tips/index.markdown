@@ -69,6 +69,11 @@ Search for flag
 {% highlight bash%}
 find / -type f \( -name "root.txt" -o -name "user.txt" \) 2>/dev/nul
 {% endhighlight %}
+Untar
+{% highlight bash%}
+tar -xvf
+{% endhighlight %}
+
 [Back to the top](#header)
 
 Reverse shells
