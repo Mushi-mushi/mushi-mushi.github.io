@@ -22,6 +22,7 @@ msf > loadpath /usr/share/metasploit-framework/modules/
 or
 mv exploit.rb ~/.msf4/modules/exploit/exploit.rb and msf > reload_all
 {% endhighlight %}
+sessions -l :list sessions
 
 One Liners
 ==========
