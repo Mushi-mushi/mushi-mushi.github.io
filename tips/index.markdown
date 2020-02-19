@@ -97,7 +97,8 @@ $pass= “password” | ConverTo-SecureString -AsPlainText -Force #need to be ty
 $pass #to verify it is created
 $cred = New-Object System.Management.Automation.PsCredential('root',$pass)
 $cred #to verify it is created
-New-PSDrive -name root -root \\10.10.14.1\sharingiscaring -Credential $cred -PSProvider "filesystem"
+New-PSDrive -name share -root \\10.10.14.1\sharingiscaring -Credential $cred -PSProvider "filesystem"
+cd share:
 {% endhighlight %}
 [Back to the top](#header)
 
