@@ -114,7 +114,8 @@ cewl -d 0 https://www.testing.com/
 VIM shortcut
 =============
 {% highlight bash%}
-gg            :beginning of the text
+gg            :beginning of the document
+G             :end of the document
 dd            :delete line
 yy            :copy line
 p             :paste
