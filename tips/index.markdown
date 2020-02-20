@@ -148,6 +148,10 @@ Untar
 {% highlight bash%}
 tar -xvf
 {% endhighlight %}
+Removing password from ssh
+{% highlight bash%}
+tar -xvf
+{% endhighlight %}
 [Back to the top](#header)
 
 Reverse shells
