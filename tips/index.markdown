@@ -3,6 +3,16 @@ layout: tips
 title: Tips and Tricks
 ---
 
+GDB
+=======
+{% highlight bash%}
+pattern_create 200        :Create cyclic patterm
+pattern offset            :Get the offset based on the value off RSP/ESP
+info functions            :List fonctions
+break * 0x00              :Break at 0x00
+{% endhighlight %}
+[Back to the top](#header)
+
 Radar2
 =======
 {% highlight bash%}
