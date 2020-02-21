@@ -12,8 +12,9 @@ aflj                                        :List all fonctions in Json
 aflj:{}                                     :List all fonctions in Json but with better formating
 pdf @ function                              :Show the fonction
 rabin2 -i <binary>                          :List fonctions in a binary
+rabin2 -I <binary>                          :List protections and info about a binary
 rabin2 -qs <binary> | grep -ve imp -e ' 0 ' :List fonctions in a binary in an easier format
-rabin2 -z fluff                             :Looking for the string "fluff" in the binary
+rabin2 -z <binary>                          :Looking strings in a binary
 {% endhighlight %}
 [Back to the top](#header)
 
