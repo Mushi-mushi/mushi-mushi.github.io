@@ -3,6 +3,19 @@ layout: tips
 title: Tips and Tricks
 ---
 
+Radar2
+=======
+{% highlight bash%}
+aaaa                                        :Analyse the binary
+afl                                         :List all fonctions
+aflj                                        :List all fonctions in Json
+aflj:{}                                     :List all fonctions in Json but with better formating
+pdf @ function                              :Show the fonction
+rabin2 -i <binary>                          :List fonctions in a binary
+rabin2 -qs <binary> | grep -ve imp -e ' 0 ' :List fonctions in a binary in an easier format
+{% endhighlight %}
+[Back to the top](#header)
+
 Finding interesting locations
 =============================
 {% highlight bash%}
