@@ -17,6 +17,27 @@ rabin2 -qs <binary> | grep -ve imp -e ' 0 ' :List fonctions in a binary in an ea
 rabin2 -z <binary>                          :Looking strings in a binary
 {% endhighlight %}
 [Back to the top](#header)
+  
+Syscalls in x32 and x64
+==========================
+{% highlight bash%}
+x86_32
++---------+------+------+------+------+------+------+
+| syscall | arg0 | arg1 | arg2 | arg3 | arg4 | arg5 |
++---------+------+------+------+------+------+------+
+|   %eax  | %ebx | %ecx | %edx | %esi | %edi | %ebp |
++---------+------+------+------+------+------+------+
+offset_padding + system_addr + 4_bytes_padding + print_flag_cmd
+
+x86_64
++---------+------+------+------+------+------+------+
+| syscall | arg0 | arg1 | arg2 | arg3 | arg4 | arg5 |
++---------+------+------+------+------+------+------+
+|   %rax  | %rdi | %rsi | %rdx | %r10 | %r8  | %r9  |
++---------+------+------+------+------+------+------+
+offset_padding + pop_rdi_gadget + print_flag_cmd + system_addr
+{% endhighlight %}
+[Back to the top](#header)
 
 Finding interesting locations
 =============================
