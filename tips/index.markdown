@@ -3,13 +3,17 @@ layout: tips
 title: Tips and Tricks
 ---
 
-GDB
+Gdb Peda
 =======
 {% highlight bash%}
 pattern_create 200        :Create cyclic patterm
 pattern offset            :Get the offset based on the value off RSP/ESP
 info functions            :List fonctions
 break * 0x00              :Break at 0x00
+context reg               :For the registers and flags
+context code              :For disassembling around the current instruction pointer
+context stack             :For examining the stack
+context all               :For all
 {% endhighlight %}
 [Back to the top](#header)
 
