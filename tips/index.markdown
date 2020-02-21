@@ -11,6 +11,8 @@ afl                                         :List all fonctions
 aflj                                        :List all fonctions in Json
 aflj:{}                                     :List all fonctions in Json but with better formating
 pdf @ function                              :Show the fonction
+iz                                          :Show strings
+/a pop rdi, ret                             :Search for gadget pop rdi, ret
 rabin2 -i <binary>                          :List fonctions in a binary
 rabin2 -I <binary>                          :List protections and info about a binary
 rabin2 -qs <binary> | grep -ve imp -e ' 0 ' :List fonctions in a binary in an easier format
