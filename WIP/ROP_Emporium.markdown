@@ -6,7 +6,7 @@ categories: exploitation
 tags: Exploitation ROP_Emporium Ret2win
 ---
 
-As I am not that experienced with exploitation yet, I recently decided to follow the series of challenges offered by [ROP Emporium][link1]. The challenges will be explained here both as a documentation exercise and with the hope that other cybersecurity enthusiasts will be able to find some value in my post. Since I'll solve most of the challenges in x64 architecture, the following document might be helpful [x64 cheatsheet][link2]
+As I am not that experienced with exploitation yet, I recently decided to follow the series of challenges offered by [ROP Emporium][link1]. The challenges will be explained here both as a documentation exercise and with the hope that other cybersecurity enthusiasts will be able to find some value in those tutorials. Since I'll solve most of the challenges in x64 architecture, the following document might be helpful [x64 cheatsheet][link2]
 
 Requirement 
 ===========
