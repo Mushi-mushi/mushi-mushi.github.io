@@ -24,8 +24,6 @@ export SHELL=bash
 export TERM=xterm256-color
 stty rows number_of_row columns number_of_columns
 {% endhighlight %}
-
-Enjoy!
 [Back to the top](#header)
 
 Finding interesting locations
@@ -186,8 +184,6 @@ for i in $(ls /sbin/*); do echo $i; done
 for i in $(ls /sbin/*); do dpkg --search $i; done
 for i in $(ls /sbin/*); do dpkg --search $i 1>/dev/null; done
 {% endhighlight %}
-
-To investigate on different location in the $PATH
 [Back to the top](#header)
 
 Interesting Links:
@@ -202,6 +198,7 @@ Interesting Links:
 - [Pentestmonkey][link9]: Reverse Shell Cheat Sheet
 - [W3schools][link10]: Testing new layout
 - [Jekyll Tags][link12]: For future reference
+
 [Back to the top](#header)
 
 [link1]:https://jwt.io/  
