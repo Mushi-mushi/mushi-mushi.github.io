@@ -148,4 +148,4 @@ Radare2
 [link1]:https://gef.readthedocs.io/en/master/commands/pattern/ 
 [link2]:https://github.com/hugsy/gef
 [link3]:https://darkdust.net/files/GDB%20Cheat%20Sheet.pdf
-[link3]:https://radare.gitbooks.io/radare2book/debugger/migration.html
+[link4]:https://radare.gitbooks.io/radare2book/debugger/migration.html
