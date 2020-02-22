@@ -137,7 +137,7 @@ Gdb/Gef
 -------
 -[gef.readthedocs.io][link1]
 -[github.com/hugsy/][link2]
--[Cheat Sheet][link3]
+-[cheat Sheet][link3]
 
 Radare2
 -------
