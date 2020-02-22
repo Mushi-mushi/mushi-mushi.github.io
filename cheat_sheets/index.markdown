@@ -28,7 +28,8 @@ Gdb/Gef
 {% highlight bash%}
 pattern create 200          :Create cyclic patterm
 pattern offset              :Get the offset based on the value off RSP/ESP
-info functions              :List fonctions
+info functions              :List functions
+disassemble fonctions       :Show function
 break * 0x00                :Break at 0x00
 
 #python2 -c 'import struct;print "A"*40 + struct.pack("Q",0x400883)+struct.pack("Q",0x601060)+struct.pack("Q",0x4005e0)' > input
