@@ -28,9 +28,9 @@ HTB signature integration:
 
 Links:
 ======
-[jwt.io][link1] 
-![](/images/new-foe/new-foe.jpg){: width="60" height="60")} 
-![](/images/new-foe/Jerry.jpg){: .img-left}{: width="20%"}  
+[jwt.io][link1]<br/> 
+![](/images/new-foe/new-foe.jpg){: width="60" height="60")} <br/>
+![](/images/new-foe/Jerry.jpg){: .img-left}{: width="20%"}  <br/>
 <BR CLEAR="left">
 {% highlight bash%}
 [jwt.io][link1] #Standard link
