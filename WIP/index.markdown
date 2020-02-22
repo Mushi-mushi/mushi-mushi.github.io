@@ -40,3 +40,15 @@ Links:
 ![](/images/Tweet1.png){: .img-left}{: width="50%"}  
 <BR CLEAR="left">
 {% endhighlight %}
+    
+Linebreak:
+==========
+testing
+<br/>
+testing
+<br/>
+{% highlight bash%}
+testing
+<br/>
+testing
+{% endhighlight %}
