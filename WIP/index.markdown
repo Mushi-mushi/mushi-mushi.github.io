@@ -1,54 +1,18 @@
-How to make a spoilder:
-=======================
-<details>
-    <summary>Spoiler</summary>
-    Something small enough to escape casual notice.
-</details>
-
+Gdb/Gef
+=======
 {% highlight bash%}
-<details>
-    <summary>Spoiler</summary>
-    Something small enough to escape casual notice.
-</details>
-{% endhighlight %}
+pattern create 200          :Create cyclic patterm
+pattern offset              :Get the offset based on the value off RSP/ESP
+info functions              :List fonctions
+break * 0x00                :Break at 0x00
 
-Twitter Integration:
-=====================
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Check out my iOS game, High5! <a href="https://t.co/QZEKLg3G2i">https://t.co/QZEKLg3G2i</a></p>&mdash; Keita Ito (@keitaitok) <a href="https://twitter.com/keitaitok/status/504110217940836353">August 26, 2014</a></blockquote><script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-{% highlight bash%}
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Check out my iOS game, High5! <a href="https://t.co/QZEKLg3G2i">https://t.co/QZEKLg3G2i</a></p>&mdash; Keita Ito (@keitaitok) <a href="https://twitter.com/keitaitok/status/504110217940836353">August 26, 2014</a></blockquote><script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-{% endhighlight %}
+#python2 -c 'import struct;print "A"*40 + struct.pack("Q",0x400883)+struct.pack("Q",0x601060)+struct.pack("Q",0x4005e0)' > input
+#python2 -c 'from pwn import *;print("A" * 40 + p64(0x0400883) + p64(0x00601060) + p64(0x00400810))' > input
 
-HTB signature integration:
-==========================    
-[![Mushimushi](<script src="https://www.hackthebox.eu/badge/60476"></script>](https://www.hackthebox.eu/home/users/profile/60476)
-<script src="https://www.hackthebox.eu/badge/60476"></script>
-{% highlight bash%}
-[![Mushimushi](<script src="https://www.hackthebox.eu/badge/60476"></script>](https://www.hackthebox.eu/home/users/profile/60476)
+r < input                   :Injecting payload to input
 {% endhighlight %}
-
-Links:
-======
-[jwt.io][link1] 
-![](/images/new-foe/new-foe.jpg){: width="60" height="60")} 
-![](/images/new-foe/Jerry.png){: .img-left}{: width="50%"}  
-<BR CLEAR="left">
-{% highlight bash%}
-[jwt.io][link1] #Standard link
-[link1]:https://jwt.io/
-![](/images/new-foe/new-foe.jpg){: width="60" height="60")} #Link with resize
-![](/images/new-foe/Jerry.png){: .img-left}{: width="50%"}  #Link with resize and align
-<BR CLEAR="left">
-{% endhighlight %}
-    
-New Line:
-==========
-testing <br/> testing
+Additional ressources:
+- [gef.readthedocs.io][link1]
+- [hugsy][link2]
 <br/>
-{% highlight bash%}
-testing <br/> testing
-<br/>
-{% endhighlight %}
-
-
-[link1]:https://jwt.io/
+[Back to the top](#header)
