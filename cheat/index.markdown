@@ -22,9 +22,14 @@ Twitter Integration:
 HTB signature integration:
 ==========================    
 [![Mushimushi][<script src="https://www.hackthebox.eu/badge/60476"></script>](https://www.hackthebox.eu/home/users/profile/60476)
+[![Mushimushi]<script src="https://www.hackthebox.eu/badge/60476"></script>](https://www.hackthebox.eu/home/users/profile/60476)
+[<script src="https://www.hackthebox.eu/badge/60476"></script>](https://www.hackthebox.eu/home/users/profile/60476)
 <script src="https://www.hackthebox.eu/badge/60476"></script>
 {% highlight bash%}
-[![Mushimushi](<script src="https://www.hackthebox.eu/badge/60476"></script>](https://www.hackthebox.eu/home/users/profile/60476)
+[![Mushimushi][<script src="https://www.hackthebox.eu/badge/60476"></script>](https://www.hackthebox.eu/home/users/profile/60476)
+[![Mushimushi]<script src="https://www.hackthebox.eu/badge/60476"></script>](https://www.hackthebox.eu/home/users/profile/60476)
+[<script src="https://www.hackthebox.eu/badge/60476"></script>](https://www.hackthebox.eu/home/users/profile/60476)
+<script src="https://www.hackthebox.eu/badge/60476"></script>
 {% endhighlight %}
 
 Links:
