@@ -49,11 +49,13 @@ Radare2
 =======
 {% highlight bash%}
 aaaa                                        :Analyse the binary
-afl                                         :List all fonctions
-aflj                                        :List all fonctions in Json
-aflj:{}                                     :List all fonctions in Json but with better formating
-pdf @ function                              :Show the fonction
-iz                                          :Show strings
+afl                                         :List all functions
+aflj                                        :List all functions in Json
+aflj:{}                                     :List all functions in Json but with better formating
+afl!exec                                    :List all functions containing "exec"
+pdf @ function                              :Show the function
+izz                                         :Show strings
+izz~FLAG                                    :Show strings containing "FLAG"
 axt 0x0000                                  :Show cross-reference of the address 0x0000
 /a pop rdi, ret                             :Search for gadget pop rdi, ret
 rabin2 -i <binary>                          :List fonctions in a binary
