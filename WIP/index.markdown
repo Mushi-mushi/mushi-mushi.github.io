@@ -13,7 +13,6 @@ r < input                   :Injecting payload to input
 {% endhighlight %}
 Additional ressources:
 - [gef.readthedocs.io][link1]
-- [hugsy][link2]
-
+- [hugsy][link2]  
 <br/>
 [Back to the top](#header)
