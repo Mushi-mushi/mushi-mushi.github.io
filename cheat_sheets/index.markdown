@@ -36,9 +36,6 @@ break * 0x00                :Break at 0x00
 
 r < input                   :Injecting payload to input
 {% endhighlight %}
-Additional ressources:
-- [gef.readthedocs.io][link1]
-- [hugsy][link2]
 [Back to the top](#header)
 
 Radar2
@@ -124,5 +121,9 @@ Ctrl + b ] : Paste contents of buffer_0
 {% endhighlight %}
 [Back to the top](#header)
 
+Additional ressources
+=======================
+Gdb/Gef
+-------
 [link1]:https://gef.readthedocs.io/en/master/commands/pattern/ 
 [link2]:https://github.com/hugsy/gef
