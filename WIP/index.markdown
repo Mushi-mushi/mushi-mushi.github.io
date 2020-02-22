@@ -28,9 +28,15 @@ HTB signature integration:
 
 Links:
 ======
-[jwt.io][link1]
+[jwt.io][link1] #Standard link
 [link1]:https://jwt.io/
+![](/images/new-foe/new-foe.jpg){: width="60" height="60")} #Link with resize
+![](/images/Tweet1.png){: .img-left}{: width="50%"}  #Link with resize and align
+<BR CLEAR="left">
 {% highlight bash%}
 [jwt.io][link1]
 [link1]:https://jwt.io/
+![](/images/new-foe/new-foe.jpg){: width="60" height="60")}
+![](/images/Tweet1.png){: .img-left}{: width="50%"}  
+<BR CLEAR="left">
 {% endhighlight %}
