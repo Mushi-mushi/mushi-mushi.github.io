@@ -125,5 +125,11 @@ Additional ressources
 =======================
 Gdb/Gef
 -------
+
+-[gef.readthedocs.io][link1]
+-[github.com/hugsy/][link2]
+
+[Back to the top](#header)
+
 [link1]:https://gef.readthedocs.io/en/master/commands/pattern/ 
 [link2]:https://github.com/hugsy/gef
