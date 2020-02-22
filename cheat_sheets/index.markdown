@@ -1,6 +1,6 @@
 ---
 layout: tips
-title: Tips and Tricks
+title: Cheat Sheets
 ---
 Syscalls in x32 and x64
 ==========================
@@ -37,8 +37,8 @@ break * 0x00                :Break at 0x00
 r < input                   :Injecting payload to input
 {% endhighlight %}
 Additional ressources:
-[gef.readthedocs.io][link1]
-[hugsy][link2]
+- [gef.readthedocs.io][link1]
+- [hugsy][link2]
 [Back to the top](#header)
 
 Radar2
@@ -59,8 +59,6 @@ rabin2 -z <binary>                          :Looking strings in a binary
 {% endhighlight %}
 [Back to the top](#header)
   
-
-
 Metasploit shortcut
 ===================
 Updates
@@ -79,8 +77,9 @@ Load exploit to msf
 msf > loadpath /usr/share/metasploit-framework/modules/
 or
 mv exploit.rb ~/.msf4/modules/exploit/exploit.rb and msf > reload_all
-{% endhighlight %}
 sessions -l :list sessions
+{% endhighlight %}
+
 [Back to the top](#header)
 
 VIM shortcut
