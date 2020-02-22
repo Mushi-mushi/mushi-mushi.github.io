@@ -132,9 +132,9 @@ Ctrl + b ] : Paste contents of buffer_0
 
 Additional ressources
 =======================
+
 Gdb/Gef
 -------
-
 -[gef.readthedocs.io][link1]
 -[github.com/hugsy/][link2]
 -[Cheat Sheet][link3]
@@ -142,7 +142,6 @@ Gdb/Gef
 Radare2
 -------
 -[radare.gitbooks.io][link4]
-
 
 [Back to the top](#header)
 
