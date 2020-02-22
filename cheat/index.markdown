@@ -30,7 +30,7 @@ Links:
 ======
 [jwt.io][link1] 
 ![](/images/new-foe/new-foe.jpg){: width="60" height="60")} 
-![](/images/new-foe/Jerry.jpg){: .img-left}{: width="50%"}  
+![](/images/new-foe/Jerry.jpg){: .img-left}{: width="20%"}  
 <BR CLEAR="left">
 {% highlight bash%}
 [jwt.io][link1] #Standard link
