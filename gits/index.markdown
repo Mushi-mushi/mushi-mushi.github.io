@@ -75,6 +75,11 @@ Omer Yair multiple projects
 ==========================
 - [Omer Yair][link15]
 
+Security notes
+==============
+>I have started to write down notes on the security related videos I watch (as a way of quick recall). These might be more useful to beginners. The order of notes here is not in order of difficulty, but in reverse chronological order of how I write them (i.e., latest first).
+- [Security notes][link16]
+
 [link1]:https://github.com/Tib3rius/AutoRecon/  
 [link2]:http://https://github.com/DominicBreuker/stego-toolkit
 [link3]:https://https://github.com/swisskyrepo/PayloadsAllTheThings
@@ -90,3 +95,4 @@ Omer Yair multiple projects
 [link13]:https://github.com/wireghoul/doona
 [link14]:https://github.com/hugsy/stuff/tree/master/ida_scripts
 [link15]:https://github.com/OmerYa
+[link16]:https://github.com/jaybosamiya/security-notes
