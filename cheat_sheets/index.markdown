@@ -27,16 +27,20 @@ Gdb/Gef
 =======
 {% highlight bash%}
 b main                      :Break at main 
+start                       :Start and break at the entry point
 r                           :Run
+vmmap                       :Show memory layout
 info functions              :List functions
 disassemble fonctions       :Show function
 
 i r                         :Print register (not really necessary with gef)
 x/20x $sp                   :Dump the stack starting at $sp
+telescope $esp l30          :Dump the stack starting at $sp
 x/4i $pc                    :Dump 4 instruction starting at $pc
 b * 0x00                    :Break at 0x00
 
 pattern create 200          :Create cyclic patterm
+pattern search xxx          :Search for the patern xxx
 pattern offset              :Get the offset based on the value off RSP/ESP
 r < input                   :Injecting payload to input
 
