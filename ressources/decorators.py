@@ -14,3 +14,5 @@ def test2():
   time.sleep(2)
 
 test2()
+
+#Can be use to time functions, log function calls, validate input, etc
