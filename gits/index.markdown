@@ -52,7 +52,7 @@ Unicorn
 >Magic Unicorn is a simple tool for using a PowerShell downgrade attack and inject shellcode straight into memory. Based on Matthew Graeber's powershell attacks and the powershell bypass technique presented by David Kennedy (TrustedSec) and Josh Kelly at Defcon 18.
 - [Unicorn][link10]
 
-Tpotce
+Tpot
 ======
 >T-Pot is based on a vanilla Ubuntu 14.04.02 ISO image. The honeypot daemons as well as other support components we used have been paravirtualized using docker. This allowed us to run multiple honeypot daemons on the same network interface without problems make the entire system very low maintenance.
 - [Tpotce][link11]
@@ -80,6 +80,12 @@ Security notes
 >I have started to write down notes on the security related videos I watch (as a way of quick recall). These might be more useful to beginners. The order of notes here is not in order of difficulty, but in reverse chronological order of how I write them (i.e., latest first).
 - [Security notes][link16]
 
+Kite.com
+========
+>Kite is a plugin for your IDE that uses machine learning to give you useful code completions for Python. Start coding faster today.
+- [Kite][link17]
+
+
 [link1]:https://github.com/Tib3rius/AutoRecon/  
 [link2]:http://https://github.com/DominicBreuker/stego-toolkit
 [link3]:https://https://github.com/swisskyrepo/PayloadsAllTheThings
@@ -96,3 +102,4 @@ Security notes
 [link14]:https://github.com/hugsy/stuff/tree/master/ida_scripts
 [link15]:https://github.com/OmerYa
 [link16]:https://github.com/jaybosamiya/security-notes
+[link17]:https://kite.com/
