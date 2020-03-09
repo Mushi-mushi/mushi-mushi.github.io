@@ -153,6 +153,10 @@ Removing password from ssh
 {% highlight bash%}
 openssl rsa -in ~/.ssh/id_rsa -out ~/.ssh/id_rsa_new
 {% endhighlight %}
+Finding interesting stuff in github rep:
+{% highlight bash%}
+{ find .git/objects/pack/ -name "*.idx"|while read i;do git show-index < "$i"|awk '{print $2}';done;find .git/objects/ -type f|grep -v '/pack/'|awk -F'/' '{print $(NF-1)$NF}'; }|while read o;do git cat-file -p $o;done|grep -E 'pattern'
+{% endhighlight %}
 [Back to the top](#header)
 
 Reverse shells
