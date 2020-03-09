@@ -85,6 +85,10 @@ Kite.com
 >Kite is a plugin for your IDE that uses machine learning to give you useful code completions for Python. Start coding faster today.
 - [Kite][link17]
 
+Tomnomnom
+=========
+>Tools for bug bounties such as gf (grep wrapper)
+- [Tomnomnom][link17]
 
 [link1]:https://github.com/Tib3rius/AutoRecon/  
 [link2]:http://https://github.com/DominicBreuker/stego-toolkit
@@ -103,3 +107,4 @@ Kite.com
 [link15]:https://github.com/OmerYa
 [link16]:https://github.com/jaybosamiya/security-notes
 [link17]:https://kite.com/
+[link18]:https://github.com/tomnomnom
