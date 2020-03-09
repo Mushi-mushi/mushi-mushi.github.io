@@ -109,6 +109,7 @@ gg " + y G                                    :yank all line
 :%!                                           :execute bash command (like "sort u")
 :%s/patern_to_search/replace                  :replace text
 :%!xargs -n1 -I{} sh -c 'echo{} | base64 -d'  :execute base64 -d on each line
+|vim -                                        :send output to vim buffer
 {% endhighlight %}
 [Back to the top](#header)
 
