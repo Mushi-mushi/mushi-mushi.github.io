@@ -88,7 +88,7 @@ Kite.com
 Tomnomnom
 =========
 >Tools for bug bounties such as gf (grep wrapper)
-- [Tomnomnom][link17]
+- [Tomnomnom][link18]
 
 [link1]:https://github.com/Tib3rius/AutoRecon/  
 [link2]:http://https://github.com/DominicBreuker/stego-toolkit
