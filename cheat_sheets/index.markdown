@@ -95,14 +95,20 @@ sessions -l :list sessions
 VIM shortcut
 =============
 {% highlight bash%}
-gg            :beginning of the document
-G             :end of the document
-dd            :delete line
-yy            :copy line
-p             :paste
-gg dG         :delete all
-g g " + y G   :yank all line 
-: % y +       :yank all line (shorter)
+gg                                            :beginning of the document
+G                                             :end of the document
+dd                                            :delete line
+yy                                            :copy line
+p                                             :paste
+u                                             :undo
+.                                             :repeat last command
+SHIFT-A                                       :append
+gg dG                                         :delete all
+gg " + y G                                    :yank all line 
+:% y +                                        :yank all line (shorter)
+:%!                                           :execute bash command (like "sort u")
+:%s/patern_to_search/replace                  :replace text
+:%!xargs -n1 -I{} sh -c 'echo{} | base64 -d'  :execute base64 -d on each line
 {% endhighlight %}
 [Back to the top](#header)
 
