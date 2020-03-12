@@ -141,8 +141,8 @@ Ctrl + b ] : Paste contents of buffer_0
 {% endhighlight %}
 [Back to the top](#header)
 
-Tmux shortcut
-=============
+Mariadb commands
+=================
 {% highlight bash%}
 mysql -u root -p                  :login 
 show databases;                   :show databases
@@ -172,6 +172,23 @@ mycursor.execute("CREATE TABLE IF NOT EXISTS alerts (id INT PRIMARY KEY, usernam
 mycursor.execute("INSERT IGNORE INTO alerts (id,username,tags,url) VALUES (%s,%s,%s,%s)",(ID, username, hashtags, link)) #IGNORE is to ignore the error generate by duplicate entry
 mariadb_connection.commit() #dont forget to commit!
 
+{% endhighlight %}
+[Back to the top](#header)
+
+Elasticsearch API request
+==========================
+{% highlight bash%}
+curl -X DELETE "localhost:9200/twinttweets?pretty"        :delete index
+curl -X PUT "localhost:9200/twinttweets?pretty"           :create index
+curl -X GET "localhost:9200/twinttweets/_mapping?pretty"  :show mappings
+curl -X GET "localhost:9200/twinttweets/_search?pretty" -H 'Content-Type: application/json' -d'
+{
+    "from" : 0, "size" : 10,
+    "query" : {
+        "term" : { "username" : "mushi-mushi" }
+    }
+}
+' 2>/dev/null |jq 
 {% endhighlight %}
 [Back to the top](#header)
 
