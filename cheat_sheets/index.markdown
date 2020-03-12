@@ -107,7 +107,8 @@ gg dG                                         :delete all
 gg " + y G                                    :yank all line 
 :% y +                                        :yank all line (shorter)
 :%!                                           :execute bash command (like "sort u")
-:%s/patern_to_search/replace                  :replace text
+:%s/patern_to_search/replace/gc               :replace text with confirmation
+:s/patern_to_search/replace/g                 :replace for current line
 :%!xargs -n1 -I{} sh -c 'echo{} | base64 -d'  :execute base64 -d on each line
 |vim -                                        :send output to vim buffer
 {% endhighlight %}
@@ -116,28 +117,27 @@ gg " + y G                                    :yank all line
 Tmux shortcut
 =============
 {% highlight bash%}
-Ctrl + b c :Create window
-Ctrl + b , :Rename current window
-Ctrl + b % :Split pane vertically
-Ctrl + b " :Split pane horizontally
-Ctrl + b z :Toggle pane zoom
-Ctrl + b ! :Convert pane into a window
-Ctrl + b x :Close current pane
-Ctrl + b [ :Enter copy mode
-  Ctrl + s      :Enable you to search 
-                 (press enter to validate and n for next item)
-  Ctrl + space  : Start selecting
-  Ctrl + w      :Copy selection
-  Ctrl + b + ]  :Paste the selection 
-  q : Quit copy mode
-/ :Search forward
-? :Search backward
-n :Next keyword occurance
-N :Previous keyword occurance
-Spacebar   :Start selection
-Esc        :Clear selection
-Enter      :Copy selection
-Ctrl + b ] : Paste contents of buffer_0
+Ctrl + b c    :Create window
+Ctrl + b ,    :Rename current window
+Ctrl + b %    :Split pane vertically
+Ctrl + b "    :Split pane horizontally
+Ctrl + b z    :Toggle pane zoom
+Ctrl + b !    :Convert pane into a window
+Ctrl + b x    :Close current pane
+Ctrl + b [    :Enter copy mode
+Ctrl + s      :Enable you to search (press enter to validate and n for next item)
+Ctrl + space  : Start selecting
+Ctrl + w      :Copy selection
+Ctrl + b + ]  :Paste the selection 
+q             : Quit copy mode
+/             :Search forward
+?             :Search backward
+n             :Next keyword occurance
+N             :Previous keyword occurance
+Spacebar      :Start selection
+Esc           :Clear selection
+Enter         :Copy selection
+Ctrl + b ]    : Paste contents of buffer_0
 {% endhighlight %}
 [Back to the top](#header)
 
