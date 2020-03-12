@@ -141,6 +141,40 @@ Ctrl + b ] : Paste contents of buffer_0
 {% endhighlight %}
 [Back to the top](#header)
 
+Tmux shortcut
+=============
+{% highlight bash%}
+mysql -u root -p                  :login 
+show databases;                   :show databases
+use elk;                          :select a databas
+show tables;                      :show tables
+select * from alerts;             :show content of alert tables
+show columns from alerts.elk;     :show coloumns of the table alerts in the database elk
+
+Setting up mariadb and root password
+------------------------------------
+sudo apt install mariadb-server
+sudo mysql -u root
+
+#mysql commands:
+use mysql;
+update user set plugin='' where User='root';
+flush privileges;
+exit
+
+#back to bash:
+sudo systemctl restart mariadb.service
+sudo mysql_secure_installation
+
+#Python
+mycursor.execute(CREATE DATABASE IF NOT EXISTS elk;)
+mycursor.execute("CREATE TABLE IF NOT EXISTS alerts (id INT PRIMARY KEY, username VARCHAR(255),tags VARCHAR(255),url VARCHAR(255))")
+mycursor.execute("INSERT IGNORE INTO alerts (id,username,tags,url) VALUES (%s,%s,%s,%s)",(ID, username, hashtags, link)) #IGNORE is to ignore the error generate by duplicate entry
+mariadb_connection.commit() #dont forget to commit!
+
+{% endhighlight %}
+[Back to the top](#header)
+
 Additional ressources
 =======================
 
