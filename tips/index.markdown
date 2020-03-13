@@ -246,6 +246,15 @@ localhost/info.php
 {% endhighlight %}
 [Back to the top](#header)
 
+Select python version
+=====================
+{% highlight bash%}
+update-alternatives --list python
+update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1
+update-alternatives --install /usr/bin/python python /usr/bin/python3.6 2
+update-alternatives --config python
+{% endhighlight %}
+[Back to the top](#header)
 
 Interesting Links:
 ==================
