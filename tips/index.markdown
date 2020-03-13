@@ -190,6 +190,63 @@ for i in $(ls /sbin/*); do dpkg --search $i 1>/dev/null; done
 {% endhighlight %}
 [Back to the top](#header)
 
+Setting up LEMP stack 
+==============================
+Setting up nginx
+-----------------
+Simply install the package a choose a firewall profile. The working directory for the server will be /var/www/html.
+{% highlight bash%}
+sudo apt-get install nginx
+sudo ufw status
+sudo ufw enable
+sudo ufw allow 'Nginx HTTP'
+sudo ufw status
+{% endhighlight %}
+
+Setting up php-mysql
+---------------------
+Here after the installation process, a couple of files will need to be edited:
+{% highlight bash%}
+sudo apt-get install php-fpm php-mysql
+sudo vim /etc/php/7.2/fpm/php.ini
+	set cgi.fix_pathinfo=0
+sudo systemctl restart php7.2-fpm
+{% endhighlight %}
+Configure Nginx to Use the PHP Processor
+{% highlight bash%}
+sudo vim /etc/nginx/sites-available/default
+
+server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+    root /var/www/html;
+    index index.php index.html index.htm index.nginx-debian.html;
+    server_name server_domain_or_IP;
+    location / {
+        try_files $uri $uri/ =404;
+    }
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/run/php/php7.2-fpm.sock;
+    }
+    location ~ /\.ht {
+        deny all;
+    }
+}
+sudo nginx -t #testing configuration
+{% endhighlight %}
+Testing the php processor
+{% highlight bash%}
+sudo vim /var/www/html/info.php
+
+<?php
+phpinfo();
+
+localhost/info.php
+{% endhighlight %}
+[Back to the top](#header)
+
+
 Interesting Links:
 ==================
 - [jwt.io][link1]: Decode and edit jwt token
