@@ -170,6 +170,8 @@ sudo mysql_secure_installation
 mycursor.execute(CREATE DATABASE IF NOT EXISTS elk;)
 mycursor.execute("CREATE TABLE IF NOT EXISTS alerts (id INT PRIMARY KEY, username VARCHAR(255),tags VARCHAR(255),url VARCHAR(255))")
 mycursor.execute("INSERT IGNORE INTO alerts (id,username,tags,url) VALUES (%s,%s,%s,%s)",(ID, username, hashtags, link)) #IGNORE is to ignore the error generate by duplicate entry
+mycursor.execute("SELECT first_name,last_name FROM employees WHERE first_name=%s", (some_name,))                                         
+#https://mariadb.com/resources/blog/how-to-connect-python-programs-to-mariadb/ 
 mariadb_connection.commit() #dont forget to commit!
 
 {% endhighlight %}
@@ -209,6 +211,10 @@ Elasticsearch API
 ------------------
 -[Elasticsearch API][link5]
 
+Mariadb
+------------------
+-[Mariadb][link6]
+
 [Back to the top](#header)
 
 
@@ -218,3 +224,4 @@ Elasticsearch API
 [link3]:https://darkdust.net/files/GDB%20Cheat%20Sheet.pdf
 [link4]:https://radare.gitbooks.io/radare2book/debugger/migration.html
 [link5]:https://elasticsearch-py.readthedocs.io/en/master/
+[link6]:https://mariadb.com/resources/blog/how-to-connect-python-programs-to-mariadb/ 
