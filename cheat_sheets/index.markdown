@@ -113,6 +113,7 @@ gg " + y G                                    :yank all line
 |vim -                                        :send output to vim buffer
 {% endhighlight %}
 -[Vim Cheat Sheet][link7]
+-[Vim Dot File][link8]
 
 [Back to the top](#header)
 
@@ -227,4 +228,5 @@ Mariadb
 [link4]:https://radare.gitbooks.io/radare2book/debugger/migration.html
 [link5]:https://elasticsearch-py.readthedocs.io/en/master/
 [link6]:https://mariadb.com/resources/blog/how-to-connect-python-programs-to-mariadb/
-[link6]:http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html
+[link7]:http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html
+[link8]:https://github.com/mscoutermarsh/dotfiles
