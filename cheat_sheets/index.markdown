@@ -96,6 +96,7 @@ VIM shortcut
 =============
 {% highlight bash%}
 vimtutor                                      :vim tutorial
+http://vim-adventures.com                     :vim tutorial
 gg                                            :beginning of the document
 G                                             :end of the document
 dd                                            :delete line
