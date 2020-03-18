@@ -95,6 +95,7 @@ sessions -l :list sessions
 VIM shortcut
 =============
 {% highlight bash%}
+vimtutor                                      :vim tutorial
 gg                                            :beginning of the document
 G                                             :end of the document
 dd                                            :delete line
