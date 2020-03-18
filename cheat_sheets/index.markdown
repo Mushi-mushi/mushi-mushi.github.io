@@ -114,9 +114,6 @@ gg " + y G                                    :yank all line
 :%!xargs -n1 -I{} sh -c 'echo{} | base64 -d'  :execute base64 -d on each line
 |vim -                                        :send output to vim buffer
 {% endhighlight %}
--[Vim Cheat Sheet][link7]
--[Vim Dot File][link8]
-
 [Back to the top](#header)
 
 Tmux shortcut
@@ -220,6 +217,13 @@ Mariadb
 ------------------
 -[Mariadb][link6]
 
+Vim
+------------------
+-[Vim Cheat Sheet][link7]
+-[Vim Dot File][link8]
+-[Vim Adventures][link9]
+-[Vim Screen cast][link10]
+
 [Back to the top](#header)
 
 
@@ -232,3 +236,5 @@ Mariadb
 [link6]:https://mariadb.com/resources/blog/how-to-connect-python-programs-to-mariadb/
 [link7]:http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html
 [link8]:https://github.com/mscoutermarsh/dotfiles
+[link9]:https://vim-adventures.com/
+[link10]:https://vimcasts.org/
