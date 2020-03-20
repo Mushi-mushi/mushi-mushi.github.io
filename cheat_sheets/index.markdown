@@ -135,7 +135,7 @@ Ctrl + space  : Start selecting
 Ctrl + w      :Copy selection
 Ctrl + b + ]  :Paste the selection 
 q             : Quit copy mode
-/             :Search forward
+/             :Search forward or CTRL S if vim mode not enable
 ?             :Search backward
 n             :Next keyword occurance
 N             :Previous keyword occurance
