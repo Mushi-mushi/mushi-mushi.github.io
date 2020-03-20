@@ -122,6 +122,7 @@ gg " + y G                                    :yank all line
 Tmux shortcut
 =============
 {% highlight bash%}
+tmux attach-session : recover last session
 Ctrl + b c    :Create window
 Ctrl + b ,    :Rename current window
 Ctrl + b %    :Split pane vertically
