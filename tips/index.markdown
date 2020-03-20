@@ -256,6 +256,14 @@ update-alternatives --config python
 {% endhighlight %}
 [Back to the top](#header)
 
+Testing scrips as www-data
+=====================
+{% highlight bash%}
+su - www-data -s /bin/bash -c 'python /var/www/html/alerter.py'
+{% endhighlight %}
+Install missing packages as root to fix dependency
+[Back to the top](#header)
+
 Interesting Links:
 ==================
 - [jwt.io][link1]: Decode and edit jwt token
