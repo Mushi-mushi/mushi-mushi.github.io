@@ -1,0 +1,179 @@
+alert.php
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>        
+        $(document).ready(function(){
+                $("a").click(function(e) {
+                e.preventDefault();
+                $("#someFrame").attr("src", $(this).attr("href"));
+                })
+        });
+</script>
+</head>
+
+
+<body>
+<div>
+        <form action="alerter.php" method="post">
+        Query: <input type="text" name="name"><br>
+        <input type="submit">
+        </form>
+</div>
+
+<div>
+<table style="float: left">
+        <tr>
+                <th>Hits</th>
+        </tr>
+
+        <?php
+        $command = escapeshellcmd('python alerter.py');
+        $output = shell_exec($command);
+        echo $output;
+        ?>
+
+</table>
+
+
+<table style="float: left">
+    <tr>
+      <th>Twitter Preview</th>
+    </tr>
+    <tr>
+      <td><iframe name="someFrame" id="someFrame" width="560" height="315"></iframe>
+    </tr>
+  </table>
+</div>
+</body>
+</html>
+
+Alerter.py
+
+#!/usr/bin/env python
+
+import urllib.parse
+import mysql.connector as mariadb
+import requests
+import json
+from jq import jq
+import argparse
+import requests
+from luqum.elasticsearch import ElasticsearchQueryBuilder, SchemaAnalyzer
+from luqum.parser import parser
+
+# Handling arguments
+arg_parser = argparse.ArgumentParser()
+arg_parser.add_argument("-q", help="Specify your query")
+arg_parser.add_argument("-v", help="Verbose",action="store_true" )
+args = arg_parser.parse_args()
+
+#Defining parameters
+elastic="http://localhost:9200"
+index="twinttweets"
+url=elastic+"/"+index+"/_search"
+mariadb_user="root"
+mariadb_pass="elk"
+mariadb_db="elk"
+
+#Connecting to the mariadb
+mariadb_connection = mariadb.connect(user=mariadb_user, password=mariadb_pass, database=mariadb_db)
+mycursor = mariadb_connection.cursor()
+mycursor.execute("CREATE DATABASE IF NOT EXISTS elk")
+mycursor.execute("CREATE TABLE IF NOT EXISTS alerts (id VARCHAR(150) PRIMARY KEY, username VARCHAR(255),tags VARCHAR(255),url VARCHAR(255))")
+#cursor.execute("SELECT first_name,last_name FROM employees WHERE first_name=%s", (some_name,))
+#https://mariadb.com/resources/blog/how-to-connect-python-programs-to-mariadb/
+
+#Debug
+if args.v:
+    print("Elastic server: "+elastic)
+    print("Index: "+index)
+    print("URL: "+str(url))
+
+
+#Grabing the Index mapping
+index_schema=requests.get("http://localhost:9200/twinttweets/_mapping?pretty").json()
+
+#Debug
+if args.v:
+    print("Index Schema: "+str(index_schema))
+#The schema analyzer (SchemaAnalyzer) makes it easy to get a query builder (see luqum doc)
+schema_analizer = SchemaAnalyzer(index_schema)
+message_es_builder = ElasticsearchQueryBuilder(**schema_analizer.query_builder_options())
+
+#Defining query
+q = "username:petitprincipe"
+
+#Overridding standard query if one is specified
+if args.q:
+    q=str(args.q)
+
+tree = parser.parse(q)
+query = str(message_es_builder(tree))
+
+#Replace single quotes by double wuotes
+query=query.replace('\'','\"')
+
+#Replacing True by true
+query=query.replace('True','true')
+
+#Building final payload to have more than 10 result
+final_query='{"from" : 0, "size" : 100,"query" : '+query+'}'
+
+#Debug
+if args.v:
+    print("Lucene query: "+query)
+    print("Final query: "+final_query)
+#Setting up the request
+headers = {'Content-Type': 'application/json',}
+params='pretty'
+data=final_query
+
+r = requests.get(url,params=params,data=data,headers=headers)
+response = r.json()
+
+#Debug
+if args.v:
+    print(response)
+
+r = requests.get(url,params=params,data=data,headers=headers)
+response = r.json()
+
+def total_hit(json):
+    result=jq(".hits.total.value").transform(json)
+    return result
+
+def show_links(json):
+    for i in range(0,int(total_hit(json))):
+        query=".hits.hits|.["+str(i)+"]._source.link"
+        result=jq(query).transform(json)
+        print(result)
+    return
+
+def show_links_web(json):
+    for i in range(0,int(total_hit(json))):
+        ID=jq(".hits.hits|.["+str(i)+"]._source.id").transform(json)
+        username=jq(".hits.hits|.["+str(i)+"]._source.username").transform(json)
+        hashtags=str(jq(".hits.hits|.["+str(i)+"]._source.hashtags").transform(json))
+        link=jq(".hits.hits|.["+str(i)+"]._source.link").transform(json)
+        print("<tr><td><a href=https://twitframe.com/show?url="+urllib.parse.quote_plus(link)+" target=\"someFrame\">ID:"+ID+" username:"+username+" hashtags:"+hashtags+" </a></td></tr>")
+    return
+
+def index_hits(json):
+    for i in range(0,int(total_hit(json))):
+        ID=jq(".hits.hits|.["+str(i)+"]._source.id").transform(json)
+        print(ID)
+        username=jq(".hits.hits|.["+str(i)+"]._source.username").transform(json)
+        print(username)
+        hashtags=str(jq(".hits.hits|.["+str(i)+"]._source.hashtags").transform(json))
+        print(hashtags)
+        link=jq(".hits.hits|.["+str(i)+"]._source.link").transform(json)
+        print(link)
+        mycursor.execute("INSERT IGNORE INTO alerts (id,username,tags,url) VALUES (%s,%s,%s,%s)",(ID, username, hashtags, link)) #IGNORE is to ignore the error generate by duplicate entry
+        mariadb_connection.commit()
+    return
+#print(total_hit(response))
+show_links_web(response)
+
