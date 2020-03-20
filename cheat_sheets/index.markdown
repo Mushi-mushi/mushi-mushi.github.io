@@ -113,6 +113,9 @@ gg " + y G                                    :yank all line
 :s/patern_to_search/replace/g                 :replace for current line
 :%!xargs -n1 -I{} sh -c 'echo{} | base64 -d'  :execute base64 -d on each line
 |vim -                                        :send output to vim buffer
+:tabf                                         :open new file in a tab
+:tabnew                                       :opening a new tab
+:gt                                           :move to next tab
 {% endhighlight %}
 [Back to the top](#header)
 
