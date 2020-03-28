@@ -116,6 +116,7 @@ gg " + y G                                    :yank all line
 :tabf                                         :open new file in a tab
 :tabnew                                       :opening a new tab
 :gt                                           :move to next tab
+:w !sudo tee %                                :save file when sudo was forgotten 
 {% endhighlight %}
 [Back to the top](#header)
 
