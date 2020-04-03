@@ -26,6 +26,16 @@ stty rows number_of_row columns number_of_columns
 {% endhighlight %}
 [Back to the top](#header)
 
+SSH
+=============================
+Creating keys
+{% highlight bash%}
+ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
+cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+chmod 0600 ~/.ssh/authorized_keys
+{% endhighlight %}
+[Back to the top](#header)
+
 Finding interesting locations
 =============================
 {% highlight bash%}
