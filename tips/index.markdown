@@ -24,6 +24,7 @@ export SHELL=bash
 export TERM=xterm256-color
 stty rows number_of_row columns number_of_columns
 {% endhighlight %}
+rlwrap can be used too
 [Back to the top](#header)
 
 SSH
