@@ -100,7 +100,7 @@ stripped false
 subsys   Windows GUI
 va       true
 {% endhighlight %}
-Here we learn that this a windows (os windows) executable file (type EXEC) for 32bits (arch x86 and bits32). We can also see that executable-space protection is disable (nx false) although since this is a malware and not a crackme challenge this is probably not that relevant at this point. That being said looking back at the section permission could potentially give us additional information:
+Here we learn that this a windows (os windows) executable file (type EXEC) for 32bits (arch x86 and bits32) which apparently has been compiled on Thu Jan  1 04:00:00 1970(that can be manipulated though). We can also see that executable-space protection is disable (nx false) although since this is a malware and not a crackme challenge this is probably not that relevant at this point. That being said looking back at the section permission could potentially give us additional information:
 {% highlight bash%}
 Nm Paddr       Size Vaddr      Memsz Perms Name
 00 0x00000400  7680 0x00401000  8192 -r-x .text
