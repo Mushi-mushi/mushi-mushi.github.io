@@ -16,6 +16,14 @@ root@kali:~/sample# r2 -n sample.bin
 [0x00000000]> ph entropy $s
 5.316590
 {% endhighlight %}
+or simply 
+{% highlight bash%}
+root@kali:~/sample# r2 -qfnc "ph entropy" sample.bin 
+5.316590
+{% endhighlight %}
+Now it could be interesting to look at the entropy per sections, whish luckely R2 enable us to do easily !
+
+
 
 
 
