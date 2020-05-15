@@ -54,8 +54,64 @@ Nm Paddr       Size Vaddr      Memsz Perms Checksum          Name
 
 [0x004014a0]> 
 {% endhighlight %}
-Since the entropy reported is always under 7, the chances if the sample to be packed and/or encrypted is pretty low at this point.
-
+Since the entropy reported is always under 7, the chances of the sample to be packed and/or encrypted is pretty low at this point. Next, let's take a look at the header to see what kind of binary that is. Checking the header in R2 can be done either by typing i(a bit easier to read) or ih:
+{% highlight bash%}
+[0x004014a0]> i
+blksz    0x0
+block    0x100
+fd       3
+file     sample.bin
+format   pe
+iorw     false
+mode     r-x
+size     0x3800
+humansz  14K
+type     EXEC (Executable file)
+arch     x86
+baddr    0x400000
+binsz    14336
+bintype  pe
+bits     32
+canary   false
+retguard false
+sanitiz  false
+class    PE32
+cmp.csum 0x000046bf
+compiled Thu Jan  1 04:00:00 1970
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x000046bf
+laddr    0x0
+linenum  true
+lsyms    true
+machine  i386
+maxopsz  16
+minopsz  1
+nx       false
+os       windows
+overlay  false
+pcalign  0
+pic      false
+relocs   true
+signed   false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+{% endhighlight %}
+Here we learn that this a windows (os windows) executable file (type EXEC) for 32bits (arch x86 and bits32). We can also see that executable-space protection is disable (nx false) although since this is a malware and not a crackme challenge this is probably not that relevant at this point. That being said looking back at the section permission could potentially give us additional information:
+{% highlight bash%}
+Nm Paddr       Size Vaddr      Memsz Perms Name
+00 0x00000400  7680 0x00401000  8192 -r-x .text
+01 0x00002200   512 0x00403000  4096 -rw- .data
+02 0x00002400  2048 0x00404000  4096 -r-- .rdata
+03 0x00000000     0 0x00405000  4096 -rw- .bss
+04 0x00002c00  2048 0x00406000  4096 -rw- .idata
+05 0x00003400   512 0x00407000  4096 -rw- .CRT
+06 0x00003600   512 0x00408000  4096 -rw- .tls
+{% endhighlight %}
+For example, if the .text section was writable, we could have a sample that self modified itself, which is pretty rare in legitimate application. However this is not the case here.
 
 
 
