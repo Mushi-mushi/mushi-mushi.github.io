@@ -366,7 +366,7 @@ Unfortunately not much additional info there ... Do let's move the fun part and 
 [0x00401530]> 
 {% endhighlight %}
 Visual mode might be helpfull here:
-![](/images/radare2/visual.PNG)
+![](/images/radare2/visual.PNG){: width="50%"}
 [link1]:https://www.youtube.com/watch?v=DnZLy_sq-nY&feature=emb_logo
 [link2]:https://attack.mitre.org/techniques/T1060/
 [link3]:https://attack.mitre.org/techniques/T1497/
