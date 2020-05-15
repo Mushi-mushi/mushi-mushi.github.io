@@ -54,7 +54,7 @@ Nm Paddr       Size Vaddr      Memsz Perms Checksum          Name
 
 [0x004014a0]> 
 {% endhighlight %}
-Since the entropy reported is always under 7, the chances of the sample to be packed and/or encrypted is pretty low at this point. Next, let's take a look at the header to see what kind of binary that is. Checking the header in R2 can be done either by typing i(a bit easier to read) or ih:
+There is as well the p==e @section..rdata command that gives you a visual representation of entropy but I don't really know how to interpret that though... Since the entropy reported is always under 7, the chances of the sample to be packed and/or encrypted is pretty low at this point. Next, let's take a look at the header to see what kind of binary that is. Checking the header in R2 can be done either by typing i(a bit easier to read) or ih:
 {% highlight bash%}
 [0x004014a0]> i
 blksz    0x0
