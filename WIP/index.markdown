@@ -22,9 +22,39 @@ root@kali:~/sample# r2 -qfnc "ph entropy" sample.bin
 5.316590
 {% endhighlight %}
 Now it could be interesting to look at the entropy per sections, whish luckely R2 enable us to do easily !
+{% highlight bash%}
+root@kali:~/sample# r2 sample.bin 
+[0x004014a0]> aaaa
+[x] Analyze all flags starting with sym. and entry0 (aa)
+[x] Analyze function calls (aac)
+[x] Analyze len bytes of instructions for references (aar)
+[x] Constructing a function name for fcn.* and sym.func.* functions (aan)
+[x] Enable constraint types analysis for variables
+[0x004014a0]> iS
+[Sections]
+Nm Paddr       Size Vaddr      Memsz Perms Name
+00 0x00000400  7680 0x00401000  8192 -r-x .text
+01 0x00002200   512 0x00403000  4096 -rw- .data
+02 0x00002400  2048 0x00404000  4096 -r-- .rdata
+03 0x00000000     0 0x00405000  4096 -rw- .bss
+04 0x00002c00  2048 0x00406000  4096 -rw- .idata
+05 0x00003400   512 0x00407000  4096 -rw- .CRT
+06 0x00003600   512 0x00408000  4096 -rw- .tls
 
+[0x004014a0]> iS entropy
+[Sections]
+Nm Paddr       Size Vaddr      Memsz Perms Checksum          Name
+00 0x00000400  7680 0x00401000  8192 -r-x entropy=5.90224208 .text
+01 0x00002200   512 0x00403000  4096 -rw- entropy=0.57814914 .data
+02 0x00002400  2048 0x00404000  4096 -r-- entropy=5.00207308 .rdata
+03 0x00000000     0 0x00405000  4096 -rw- entropy=0.00000000 .bss
+04 0x00002c00  2048 0x00406000  4096 -rw- entropy=4.18768876 .idata
+05 0x00003400   512 0x00407000  4096 -rw- entropy=0.27482548 .CRT
+06 0x00003600   512 0x00408000  4096 -rw- entropy=0.00000000 .tls
 
-
+[0x004014a0]> 
+{% endhighlight %}
+Since the entropy reported is always under 7, the chances if the sample to be packed and/or encrypted is pretty low at this point.
 
 
 
