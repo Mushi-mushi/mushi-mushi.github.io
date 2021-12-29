@@ -11,7 +11,7 @@ It's this time of the year again ! The SANS xmas challenge is back and I though 
 Ho Ho ...No !
 -------------
 This challenge is focused on the famous fail2ban. Here is the challenge:
-{% highlight bash%}
+{% highlight%}
 Jack is trying to break into Santa's workshop!
 
 Santa's elves are working 24/7 to manually look through logs, identify the
