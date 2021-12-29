@@ -43,9 +43,50 @@ and tell Fail2Ban to reprocess it.
 {% endhighlight %}
 
 To resolve this challenge, [fail2ban-client][link1] will be rather helpful, as well as [fail2ban-regex][link2]
-   
 
-   
+Fail2Ban jail "kinglecon"
+----------------------------
+The config requirement for this file are:
+   - log entries in /var/log/hohono.log
+   - 10 or more failure messages
+   - within an hour
+
+Which gives us something like this:
+{% highlight bash%}
+[kringlecon]
+findtime = 3600
+bantime = 600
+maxretry = 10
+backend = auto
+filter   = kringle
+banaction = kringle
+enabled = true
+logpath  = /var/log/hohono.log
+{% endhighlight %}
+Obviously the filter and banaction "kringle" still need to be defined at this point
+
+
+Fail2Ban action "kinglecon"
+-----------------------------
+This one is very straightforward, let's not forget to put the full path of the naughtylist executable and we should be good to go:
+{% highlight bash%}
+[Definition]
+actionban = /root/naughtylist add <ip>
+actionunban = /root/naughtylist del <ip>
+{% endhighlight %}
+Finally, we need to set up our filter.
+
+Fail2Ban filter "kinglecon"
+-----------------------------
+ Grepping the log file for different kind of log shows four interesting type of log:
+{% highlight bash%}
+[Definition]
+failregex  = ^.* Login from <HOST> rejected due to unknown user name.*$
+             ^.* Failed login from <HOST> for .*$
+             ^.* <HOST> sent a malformed request.*$
+             ^.* Invalid heartbeat .* from <HOST>.*$
+{% endhighlight %}
+Be carefull that the timestamps are automatically processed while using fail2ban-regex but not in the filter (or the other way around...)
    
 [link1]:https://www.fail2ban.org/wiki/index.php/Commands 
-[link2]:https://app.any.run/tasks/1d7567d9-0eac-4944-ba38-4894fdfe1c2f/
+[link2]:https://fail2ban.readthedocs.io/en/latest/filters.html
