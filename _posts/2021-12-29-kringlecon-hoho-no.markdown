@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Kringlecon 2021 - Ho Ho ...No !"
-date:   09-02-2020 13:34:34
+date:   29-12-2021 13:34:34
 categories: exploitation
 tags: kringlecon
 ---
