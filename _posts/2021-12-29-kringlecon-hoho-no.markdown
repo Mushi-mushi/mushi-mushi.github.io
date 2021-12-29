@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A new foe has appeared !"
+title:  "Kringlecon 2021 - Ho Ho ...No !"
 date:   09-02-2020 13:34:34
 categories: malware
 tags: kringlecon
@@ -33,4 +33,19 @@ You'll be rewarded if you correctly identify all the malicious IPs with a
 Fail2Ban filter in /etc/fail2ban/filter.d, an action to ban and unban in
 /etc/fail2ban/action.d, and a custom jail in /etc/fail2ban/jail.d. Don't
 add any nice IPs to the naughty list!
+   
+*** IMPORTANT NOTE! ***
+
+Fail2Ban won't rescan any logs it has already seen. That means it won't
+automatically process the log file each time you make changes to the Fail2Ban
+config. When needed, run /root/naughtylist list refresh to re-sample the log file
+and tell Fail2Ban to reprocess it.
 {% endhighlight %}
+
+To resolve this challenge, [fail2ban-client][link1] will be rather helpful, as well as [fail2ban-regex][link2]
+   
+
+   
+   
+[link1]:https://www.fail2ban.org/wiki/index.php/Commands 
+[link2]:https://app.any.run/tasks/1d7567d9-0eac-4944-ba38-4894fdfe1c2f/
