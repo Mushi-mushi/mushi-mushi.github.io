@@ -9,6 +9,7 @@ tags: kringlecon
 Introduction
 ------------
 It's this time of the year again ! The SANS xmas challenge is back and I though I would documented some of the challenges as a way to get back into this blog. Without further ado, let's jump into it !
+
 Ho Ho ...No !
 -------------
 This challenge is focused on the famous fail2ban. Here is the challenge:
